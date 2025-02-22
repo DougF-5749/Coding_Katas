@@ -1,3 +1,5 @@
+from ..katas.list_manipulations import *
+
 # Reverse a List
 # Task: Reverse the elements of a list in-place (or return a new reversed list).
 # Example: Input [1, 2, 3] -> Output [3, 2, 1].
