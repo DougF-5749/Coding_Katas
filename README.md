@@ -7,16 +7,18 @@ This repository contains simple coding katas to practice problem-solving and Tes
 ```markdown
 📁 Coding_Katas/
 │
+├── 📁 hints/
+│   ├── string_manipulations.md
+│   ├── etc
+│
 ├── 📁 katas/
 │   ├── init.py
 │   ├── string_manipulations.py
-│   ├── other_kata_files.py
 │   ├── etc
 │
 ├── 📁 tests/
 │   ├── init.py
 │   ├── test_string_manipulations.py
-│   ├── test_other_kata_files.py
 │   ├── etc
 │
 ├── .gitignore                
