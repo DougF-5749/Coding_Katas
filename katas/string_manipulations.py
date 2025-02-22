@@ -7,10 +7,8 @@
 # Input: "apprentice"
 # Output: "ecitnerppa"
 
-
-
-
-
+def reverse_string():
+    pass
 
 # 2. Check Palindrome
 # Description
@@ -22,9 +20,8 @@
 # Input: "level" -> Output: True
 # Input: "hello" -> Output: False
 
-
-
-
+def check_palindrome():
+    pass
 
 # 3. Count Vowels and Consonants
 # Description
@@ -34,9 +31,8 @@
 
 # Input: "Apprentice" -> Vowels: 4, Consonants: 6
 
-
-
-
+def count_vowels_and_consonants():
+    pass
 
 # 4. Character Frequency
 # Description
@@ -46,9 +42,8 @@
 
 # Input: "banana" -> {'b': 1, 'a': 3, 'n': 2}
 
-
-
-
+def character_frequency():
+    pass
 
 # 5. Remove Duplicate Characters
 # Description
@@ -59,9 +54,8 @@
 # Input: "banana" -> "ban"
 # Input: "abcaabcd" -> "abcd"
 
-
-
-
+def remove_duplicate_characters():
+    pass
 
 # 6. Find the Longest Word in a Sentence
 # Description
@@ -71,10 +65,8 @@
 
 # Input: "This is a test sentence." -> "sentence"
 
-
-
-
-
+def find_longest_word_in_sentence():
+    pass
 
 # 7. Reverse Each Word in a Sentence
 # Description
@@ -85,11 +77,8 @@
 # Input: "Hello world"
 # Output: "olleH dlrow"
 
-
-
-
-
-
+def reverse_each_word_in_sentence():
+    pass
 
 # 8. String Compression
 # Description
@@ -100,12 +89,8 @@
 # Input: "aaabbc" -> "a3b2c1"
 # If the compressed string has the same length or is longer, just return the original.
 
-
-
-
-
-
-
+def string_compression():
+    pass
 
 # 9. First Non-Repeating Character
 # Description
@@ -116,11 +101,8 @@
 # Input: "swiss" -> 'w' (because 's' repeats, 'w' does not repeat)
 # Input: "aabb" -> None (no unique character)
 
-
-
-
-
-
+def first_non_repeating_character():
+    pass
 
 # 10. Generate All Substrings
 # Description
@@ -131,10 +113,8 @@
 # Input: "abc"
 # Substrings: "a", "b", "c", "ab", "bc", "abc"
 
-
-
-
-
+def generate_all_substrings():
+    pass
 
 
 # 11. Validate an Anagram
@@ -147,10 +127,8 @@
 # Input: ("hello", "olleh") -> True
 # Input: ("abc", "abd") -> False
 
-
-
-
-
+def validate_anagram():
+    pass
 
 
 # 12. Convert String to Title Case
@@ -161,10 +139,8 @@
 
 # Input: "hello WORLD" -> Output: "Hello World"
 
-
-
-
-
+def convert_string_to_title_case():
+    pass
 
 # 13. Remove All Occurrences of a Character
 # Description
@@ -174,11 +150,8 @@
 
 # Input: "banana", "a" -> Output: "bnn"
 
-
-
-
-
-
+def remove_all_occurrences_of_a_character():
+    pass
 
 # 14. Mask/Obfuscate Part of a String
 # Description
@@ -189,11 +162,8 @@
 # Input: "1234567890" -> Output: "12******90"
 # Input: "abcdefg" -> Output: "ab***fg"
 
-
-
-
-
-
+def mask_obfuscate_part_of_a_string():
+    pass
 
 # 15. Check if a String Contains All Letters of the Alphabet
 # Description
@@ -204,11 +174,8 @@
 # Input: "The quick brown fox jumps over the lazy dog" -> True
 # Input: "Hello world" -> False
 
-
-
-
-
-
+def check_if_string_contains_all_letters_of_the_alphabet():
+    pass
 
 # 16. Caesar Cipher Encryption
 # Description
@@ -219,12 +186,8 @@
 # Input: "abc", shift = 2 -> Output: "cde"
 # Input: "xyz", shift = 3 -> Output: "abc"
 
-
-
-
-
-
-
+def caesar_cipher_encryption():
+    pass
 
 # 17. Find the Longest Common Prefix
 # Description
@@ -235,12 +198,8 @@
 # Input: ["flower", "flow", "flight"] -> Output: "fl"
 # Input: ["dog", "racecar", "car"] -> Output: "" (empty string)
 
-
-
-
-
-
-
+def find_the_longest_common_prefix():
+    pass
 
 # 18. Remove All Non-Alphanumeric Characters
 # Description
@@ -250,11 +209,8 @@
 
 # Input: "Hello, World!" -> Output: "HelloWorld"
 
-
-
-
-
-
+def remove_all_non_alphanumeric_characters():
+    pass
 
 # 19. Find and Replace Pattern in a String
 # Description
@@ -265,10 +221,8 @@
 # Input: string="cats like to chase mice", pattern="cats", replacement="dogs"
 # Output: "dogs like to chase mice"
 
-
-
-
-
+def find_and_replace_pattern_in_a_string():
+    pass
 
 # 20. Sort Characters in a String
 # Description
@@ -278,3 +232,7 @@
 
 # Input: "cba" -> Output: "abc"
 # Input: "banana" -> Output: "aaabnn"
+
+
+def sort_characters_in_a_string():
+    pass

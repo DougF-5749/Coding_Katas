@@ -134,7 +134,7 @@ def test_find_the_longest_common_prefix():
     actual_1 = find_the_longest_common_prefix(["flower", "flow", "flight"])
     expected_1 = "fl"
 
-    actual_2 = find_the_longest_common(["dog", "racecar", "car"])
+    actual_2 = test_find_the_longest_common_prefix(["dog", "racecar", "car"])
     expected_2 = ""
 
     actual_3 = find_the_longest_common_prefix(["flower", "flow", "bright", "brine", "british"])
