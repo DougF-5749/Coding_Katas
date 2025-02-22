@@ -1,78 +1,27 @@
-# 1. Reverse a String
-# Description
-# Given a string, return the string in reverse order.
+from ..katas.string_manipulations import *
 
-# Example:
+def test_reverse_string():
+    result = reverse_string("apprentice")
+    actual = "ecitnerppa"
 
-# Input: "apprentice"
-# Output: "ecitnerppa"
+    result_2 = reverse_string("hello")
+    actual_2 = "olleh"
 
-# Hints
+    result_3 = reverse_string("goodbye")
+    actual_3 = "eybdoog"
 
-# You can use Python’s slicing syntax: reversed_str = my_str[::-1].
-# Alternatively, you can build the reversed string by iterating backward or using reversed(my_str).
+    assert result == actual
+    assert result_2 == actual_2
+    assert result_3 == actual_3
 
+def test_check_palindrome():
+    assert check_palindrome("racecar") == True 
+    assert check_palindrome("hello") == False
 
-
-
-
-
-
-
-
-
-
-
-
-# 2. Check Palindrome
-# Description
-# Given a string, determine if it is a palindrome (a string that reads the same forward and backward).
-
-# Example:
-
-# Input: "racecar" -> Output: True
-# Input: "level" -> Output: True
-# Input: "hello" -> Output: False
-# Hints
-
-# You can reuse your solution for reversing a string and compare it to the original.
-# Convert string to a common case (e.g., all lowercase) if you need a case-insensitive check.
-
-
-
-
-
-
-
-
-
-
-
-
-# 3. Count Vowels and Consonants
-# Description
-# Given a string, count how many vowels (a, e, i, o, u) and how many consonants it contains. (Assume inputs consist of letters only for simplicity, or handle punctuation/spaces by ignoring them.)
-
-# Example:
-
-# Input: "Apprentice" -> Vowels: 4, Consonants: 6
-# Hints
-
-# Convert the string to lowercase.
-# Use a set of vowels ({'a','e','i','o','u'}) for quick membership checking.
-# Increment counters for vowels and consonants accordingly.
-
-
-
-
-
-
-
-
-
-
-
-
+def test_count_vowels_and_consonants():
+    result_1 = count_vowels_and_consonants("Apprentice")
+    actual_1 = "Vowels: 4, Consonants: 6"
+    assert result_1 == actual_1
 
 # 4. Character Frequency
 # Description
