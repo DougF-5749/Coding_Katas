@@ -7,18 +7,6 @@
 # Input: "apprentice"
 # Output: "ecitnerppa"
 
-# Hints
-
-# You can use Python’s slicing syntax: reversed_str = my_str[::-1].
-# Alternatively, you can build the reversed string by iterating backward or using reversed(my_str).
-
-
-
-
-
-
-
-
 
 
 
@@ -33,17 +21,6 @@
 # Input: "racecar" -> Output: True
 # Input: "level" -> Output: True
 # Input: "hello" -> Output: False
-# Hints
-
-# You can reuse your solution for reversing a string and compare it to the original.
-# Convert string to a common case (e.g., all lowercase) if you need a case-insensitive check.
-
-
-
-
-
-
-
 
 
 
@@ -56,19 +33,6 @@
 # Example:
 
 # Input: "Apprentice" -> Vowels: 4, Consonants: 6
-# Hints
-
-# Convert the string to lowercase.
-# Use a set of vowels ({'a','e','i','o','u'}) for quick membership checking.
-# Increment counters for vowels and consonants accordingly.
-
-
-
-
-
-
-
-
 
 
 
@@ -81,18 +45,6 @@
 # Example:
 
 # Input: "banana" -> {'b': 1, 'a': 3, 'n': 2}
-# Hints
-
-# Python collections.Counter can do this in a single line.
-# Or manually loop through each character and update a dictionary.
-
-
-
-
-
-
-
-
 
 
 
@@ -106,18 +58,6 @@
 
 # Input: "banana" -> "ban"
 # Input: "abcaabcd" -> "abcd"
-# Hints
-
-# Maintain a set to track seen characters.
-# Build a new string by adding characters only if they haven’t been seen before.
-
-
-
-
-
-
-
-
 
 
 
@@ -130,17 +70,6 @@
 # Example:
 
 # Input: "This is a test sentence." -> "sentence"
-# Hints
-
-# Split the sentence into words (e.g., sentence.split() or using regex).
-# Strip punctuation if needed.
-# Track the longest word as you iterate.
-
-
-
-
-
-
 
 
 
@@ -155,15 +84,6 @@
 
 # Input: "Hello world"
 # Output: "olleH dlrow"
-# Hints
-
-# Split the sentence, reverse each piece, and then join them back together.
-# Watch out for leading/trailing spaces or multiple spaces if that’s in scope.
-
-
-
-
-
 
 
 
@@ -179,16 +99,6 @@
 
 # Input: "aaabbc" -> "a3b2c1"
 # If the compressed string has the same length or is longer, just return the original.
-# Hints
-
-# Iterate through the string, track consecutive characters.
-# Build the compressed result as you go.
-# Compare lengths at the end.
-
-
-
-
-
 
 
 
@@ -205,15 +115,6 @@
 
 # Input: "swiss" -> 'w' (because 's' repeats, 'w' does not repeat)
 # Input: "aabb" -> None (no unique character)
-# Hints
-
-# Use a dictionary or Counter to count occurrences.
-# Then iterate through the string in order and return the first character with a count of 1.
-
-
-
-
-
 
 
 
@@ -229,15 +130,6 @@
 
 # Input: "abc"
 # Substrings: "a", "b", "c", "ab", "bc", "abc"
-# Hints
-
-# You can use two nested loops:
-# Outer loop picks a start index,
-# Inner loop picks an end index.
-# Mind the indexing carefully (e.g., s[i:j]).
-
-
-
 
 
 
@@ -254,16 +146,6 @@
 # Input: ("listen", "silent") -> True
 # Input: ("hello", "olleh") -> True
 # Input: ("abc", "abd") -> False
-# Hints
-
-# Sort both strings and compare if they’re the same.
-# Or count characters in each and compare the dictionaries.
-
-
-
-
-
-
 
 
 
@@ -278,15 +160,6 @@
 # Example:
 
 # Input: "hello WORLD" -> Output: "Hello World"
-# Hints
-
-# You can use the built-in .title() method, but be aware that it might not always behave as expected for certain edge cases (apostrophes, etc.).
-# Alternatively, split the string into words and capitalize each word manually with .capitalize() or .lower() + .upper() on first letter.
-
-
-
-
-
 
 
 
@@ -300,14 +173,6 @@
 # Example:
 
 # Input: "banana", "a" -> Output: "bnn"
-# Hints
-
-# Use a simple string replace: new_string = original_string.replace(char_to_remove, "").
-# Or build a new string in a loop ignoring that character.
-
-
-
-
 
 
 
@@ -323,15 +188,6 @@
 
 # Input: "1234567890" -> Output: "12******90"
 # Input: "abcdefg" -> Output: "ab***fg"
-# Hints
-
-# Slice the string: keep the unmasked prefix and suffix, and replace the middle with the chosen character repeated enough times.
-# Be mindful of edge cases when the string is shorter than the total of prefix + suffix.
-
-
-
-
-
 
 
 
@@ -347,15 +203,6 @@
 
 # Input: "The quick brown fox jumps over the lazy dog" -> True
 # Input: "Hello world" -> False
-# Hints
-
-# Convert the string to lowercase and remove non-letter characters.
-# Use a set to collect unique letters. Then check if the set’s size is 26.
-
-
-
-
-
 
 
 
@@ -371,15 +218,6 @@
 
 # Input: "abc", shift = 2 -> Output: "cde"
 # Input: "xyz", shift = 3 -> Output: "abc"
-# Hints
-
-# Use the ASCII code or a string of alphabets.
-# Handle wraparound (e.g., after 'z' comes 'a').
-
-
-
-
-
 
 
 
@@ -396,16 +234,6 @@
 
 # Input: ["flower", "flow", "flight"] -> Output: "fl"
 # Input: ["dog", "racecar", "car"] -> Output: "" (empty string)
-# Hints
-
-# Compare characters of each string position by position.
-# Stop at the first mismatch.
-
-
-
-
-
-
 
 
 
@@ -421,16 +249,6 @@
 # Example:
 
 # Input: "Hello, World!" -> Output: "HelloWorld"
-# Hints
-
-# Use a simple comprehension with char.isalnum()
-# Or use regex: re.sub(r'[^a-zA-Z0-9]', '', my_str)
-
-
-
-
-
-
 
 
 
@@ -446,19 +264,6 @@
 
 # Input: string="cats like to chase mice", pattern="cats", replacement="dogs"
 # Output: "dogs like to chase mice"
-# Hints
-
-# You can use the built-in str.replace(old, new) for a simple find-and-replace.
-# For more complex matching (like partial matches or ignoring case), you might use the re module.
-
-
-
-
-
-
-
-
-
 
 
 
@@ -473,7 +278,3 @@
 
 # Input: "cba" -> Output: "abc"
 # Input: "banana" -> Output: "aaabnn"
-# Hints
-
-# Convert the string to a list of characters, sort, then join back together.
-# Or simply do ''.join(sorted(my_str)) in Python.
