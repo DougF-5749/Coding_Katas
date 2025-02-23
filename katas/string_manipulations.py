@@ -7,9 +7,9 @@
 # Input: "apprentice"
 # Output: "ecitnerppa"
 
-def reverse_string():
-    pass
-
+def reverse_string(string):
+    return string[::-1]
+    
 # 2. Check Palindrome
 # Description
 # Given a string, determine if it is a palindrome (a string that reads the same forward and backward).
