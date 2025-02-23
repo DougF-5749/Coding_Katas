@@ -1,4 +1,4 @@
-from ..katas.basic_algorithms import *
+from katas.basic_algorithms import *
 
 # Factorial
 # Task: Compute the factorial of a number n (e.g., n! = n × (n-1) × … × 1).

@@ -1,4 +1,4 @@
-from ..katas.string_manipulations import *
+from katas.string_manipulations import *
 
 def test_reverse_string():
     actual = reverse_string("apprentice")

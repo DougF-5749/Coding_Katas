@@ -1,4 +1,4 @@
-from ..katas.list_manipulations import *
+from katas.list_manipulations import *
 
 # Reverse a List
 # Task: Reverse the elements of a list in-place (or return a new reversed list).

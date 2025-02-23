@@ -1,4 +1,4 @@
-from ..katas.dictionary_manipulaptions import *
+from katas.dictionary_manipulaptions import *
 
 # Count Word Frequencies
 # Task: Given a list of words, build a dictionary mapping each word to its count.

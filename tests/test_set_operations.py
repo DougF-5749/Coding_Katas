@@ -1,4 +1,4 @@
-from ..katas.set_operations import *
+from katas.set_operations import *
 
 # Set Intersection, Union, Difference
 # Task: Given two sets, compute their intersection, union, and difference. Return the three sets in a dictionary.
