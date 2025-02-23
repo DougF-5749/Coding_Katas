@@ -20,8 +20,8 @@ def reverse_string(string):
 # Input: "level" -> Output: True
 # Input: "hello" -> Output: False
 
-def check_palindrome():
-    pass
+def check_palindrome(string):
+    return string == string[::-1]
 
 # 3. Count Vowels and Consonants
 # Description
