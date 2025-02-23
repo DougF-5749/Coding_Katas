@@ -58,8 +58,16 @@ def count_vowels_and_consonants(string):
 
 # Input: "banana" -> {'b': 1, 'a': 3, 'n': 2}
 
-def character_frequency():
-    pass
+def character_frequency(string):
+    freq_dict = {}
+
+    for e in string:
+        if e not in freq_dict:
+            freq_dict[e] = 1
+        elif e in freq_dict:
+            freq_dict[e] += 1
+
+    return freq_dict
 
 # 5. Remove Duplicate Characters
 # Description
