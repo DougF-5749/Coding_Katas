@@ -31,8 +31,24 @@ def check_palindrome(string):
 
 # Input: "Apprentice" -> Vowels: 4, Consonants: 6
 
-def count_vowels_and_consonants():
-    pass
+def count_vowels_and_consonants(string):
+    vowels = "aeiou"
+    v_count = 0
+    c_count = 0
+
+    # loop though string and check if element is:
+    for e in string.lower():
+        # isalpha and is in aeiuo
+        if e.isalpha() and e in vowels:
+            print(e)
+            # v_count += 1
+            v_count += 1
+        # isalpha and is not in aeiuo
+        if e.isalpha and e not in vowels:
+            # c_count += 1
+            c_count += 1
+
+    return f"Vowels: {v_count}, Consonants: {c_count}"
 
 # 4. Character Frequency
 # Description
