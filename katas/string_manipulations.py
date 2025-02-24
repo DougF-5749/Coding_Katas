@@ -245,8 +245,10 @@ def convert_string_to_title_case(string):
 
 # Input: "banana", "a" -> Output: "bnn"
 
-def remove_all_occurrences_of_a_character():
-    pass
+def remove_all_occurrences_of_a_character(string, char):
+    return "".join(list(filter(lambda x: x != char, string)))
+
+
 
 # 14. Mask/Obfuscate Part of a String
 # Description
