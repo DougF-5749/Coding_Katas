@@ -59,7 +59,7 @@ def test_find_longest_word_in_sentence():
 
     assert actual_3 == expected_3
     
-    actual_4 = find_longest_word_in_sentence("This, contains a comma")
+    actual_4 = find_longest_word_in_sentence("This, has a comma")
     expected_4 = "comma"
 
     assert actual_4 == expected_4

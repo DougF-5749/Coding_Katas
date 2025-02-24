@@ -94,8 +94,20 @@ def remove_duplicate_characters(string):
 
 # Input: "This is a test sentence." -> "sentence"
 
-def find_longest_word_in_sentence():
-    pass
+def find_longest_word_in_sentence(sentence):
+    longest_word = ""
+
+    word_list = [word for word in sentence.split(" ")]
+
+    for char in word_list:
+        if char[len(char)-1].isalpha():
+            if len(char) > len(longest_word):
+                longest_word = char
+        else:
+            if len(char[:-1]) > len(longest_word):
+                longest_word = char[:-1]
+
+    return longest_word
 
 # 7. Reverse Each Word in a Sentence
 # Description
