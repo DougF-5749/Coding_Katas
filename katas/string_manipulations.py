@@ -136,6 +136,8 @@ def reverse_each_word_in_sentence(string):
 # Input: "aaabbc" -> "a3b2c1"
 # If the compressed string has the same length or is longer, just return the original.
 
+# THIS PASSES BUT CAN BE REFECTORED LATER vvv
+
 def string_compression(string):
     compressed = ""
 
@@ -156,15 +158,37 @@ def string_compression(string):
 
 # 9. First Non-Repeating Character
 # Description
-# Given a string, find the first character that does not repeat anywhere in the string. If every character repeats, return a special value (e.g., None).
+# Given a string, find the first character that does not repeat anywhere in the string. 
+# If every character repeats, return a special value (e.g., None).
 
 # Example:
 
 # Input: "swiss" -> 'w' (because 's' repeats, 'w' does not repeat)
 # Input: "aabb" -> None (no unique character)
 
-def first_non_repeating_character():
-    pass
+def first_non_repeating_character(string):
+    frequency = {}
+    non_repeating = []
+
+    # use a dictionary to track frequency of each character 
+    for char in string:
+        if char not in frequency:
+            frequency[char] = 1
+        else:
+            frequency[char] += 1
+
+    # loop thorugh each string element and check for frequency == 1
+    for char in string:
+        if frequency[char] == 1:
+            # append to non-repeating list
+            non_repeating.append(char)
+
+    # return special character if needed
+    if len(non_repeating) == 0:
+        return None
+    # return first element in list
+    else:
+        return non_repeating[0]
 
 # 10. Generate All Substrings
 # Description

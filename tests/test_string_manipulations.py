@@ -87,8 +87,16 @@ def test_first_non_repeating_character():
     actual_2 = first_non_repeating_character("aabb")
     expected_2 = None
 
+    actual_3 = first_non_repeating_character("My name is Doug. Most of the time")
+    expected_3 = "y"
+
+    actual_4 = first_non_repeating_character("My name is Doug.")
+    expected_4 = "M"
+
     assert actual_1 == expected_1
     assert actual_2 == expected_2
+    assert actual_3 == expected_3
+    assert actual_4 == expected_4
 
 def test_generate_all_substrings():
     actual = generate_all_substrings("abc")
