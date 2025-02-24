@@ -121,8 +121,6 @@ def sort_by_second():
 def product_of_list():
     pass
 
-
-
 # MORE - need formatting:
 # Below are **10 Lambda Function Kata Challenges** that combine lambda expressions with higher‑order functions like **map** and **filter**. They range from moderate to advanced and encourage chaining transformations for more complex data manipulation.
 
