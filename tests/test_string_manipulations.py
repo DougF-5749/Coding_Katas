@@ -44,10 +44,25 @@ def test_remove_duplicate_characters():
     assert actual_2 == expected_2
 
 def test_find_longest_word_in_sentence():
-    actual = find_longest_word_in_sentence("This is a test sentence.")
-    expected = "sentence"
+    actual_1 = find_longest_word_in_sentence("This is a test sentence.")
+    expected_1 = "sentence"
 
-    assert actual == expected
+    assert actual_1 == expected_1
+    
+    actual_2 = find_longest_word_in_sentence("This is another test sentence!")
+    expected_2 = "sentence"
+
+    assert actual_2 == expected_2
+    
+    actual_3 = find_longest_word_in_sentence("This sentence contains a hypen-split word")
+    expected_3 = "hypen-split"
+
+    assert actual_3 == expected_3
+    
+    actual_4 = find_longest_word_in_sentence("This, contains a comma")
+    expected_4 = "comma"
+
+    assert actual_4 == expected_4
 
 def test_reverse_each_word_in_sentence():
     actual = reverse_each_word_in_sentence("Hello world")
