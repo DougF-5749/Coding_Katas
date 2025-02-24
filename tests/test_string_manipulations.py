@@ -71,8 +71,8 @@ def test_reverse_each_word_in_sentence():
     assert actual == expected
 
 def test_string_compression():
-    actua_1 = string_compression("aaabbc")
-    expected_1 = "a3b2c1"
+    actua_1 = string_compression("aaaabbc")
+    expected_1 = "a4b2c1"
 
     actual_2 = string_compression("hello")
     expected_2 = "hello"

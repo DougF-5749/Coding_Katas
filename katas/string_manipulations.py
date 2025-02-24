@@ -128,15 +128,31 @@ def reverse_each_word_in_sentence(string):
 
 # 8. String Compression
 # Description
-# Implement a basic string compression function. For each group of consecutive repeating characters, output <char><number_of_repeats>. If the “compressed” version isn’t shorter, return the original string.
+# Implement a basic string compression function. For each group of consecutive repeating characters, output <char><number_of_repeats>. 
+# If the “compressed” version isn’t shorter, return the original string.
 
 # Example:
 
 # Input: "aaabbc" -> "a3b2c1"
 # If the compressed string has the same length or is longer, just return the original.
 
-def string_compression():
-    pass
+def string_compression(string):
+    compressed = ""
+
+    dict = {}
+    for char in string:
+        if char not in dict:
+            dict[char] = 1
+        elif char in dict:
+            dict[char] += 1
+
+    for tup in dict.items():
+        compressed += str(tup[0]) + str(tup[1])
+
+    if len(compressed) >= len(string):
+        return string
+    else:
+        return compressed
 
 # 9. First Non-Repeating Character
 # Description
