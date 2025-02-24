@@ -199,10 +199,20 @@ def first_non_repeating_character(string):
 # Input: "abc"
 # Substrings: "a", "b", "c", "ab", "bc", "abc"
 
-def generate_all_substrings():
-    pass
+def generate_all_substrings(string):
+    substrings = []
+    # e.g. 0-3
+    for i in range(len(string)):
+        # e.g. 1-4
+        for j in range(i + 1, len(string) + 1):
+            # e.g. [3-4]
+            substrings.append(string[i:j])
 
+    # Sort by length first, then by alphabett
+    substrings.sort(key=lambda e: (len(e), e))
 
+    return substrings
+    
 # 11. Validate an Anagram
 # Description
 # Given two strings, determine if they are anagrams of each other (i.e., if they contain the same letters in the same quantity).

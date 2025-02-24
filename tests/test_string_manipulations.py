@@ -99,10 +99,14 @@ def test_first_non_repeating_character():
     assert actual_4 == expected_4
 
 def test_generate_all_substrings():
-    actual = generate_all_substrings("abc")
-    expected = ["a", "b", "c", "ab", "bc", "abc"]
+    actual_1 = generate_all_substrings("abc")
+    expected_1 = ["a", "b", "c", "ab", "bc", "abc"]
+    
+    actual_2 = generate_all_substrings("abcd")
+    expected_2 = ["a", "b", "c", "d", "ab", "bc", "cd", "abc", "bcd", "abcd"]
 
-    assert actual == expected
+    assert actual_1 == expected_1
+    assert actual_2 == expected_2
 
 def test_validate_anagram():
     assert validate_anagram("listen", "silent") == True
