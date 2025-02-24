@@ -234,8 +234,8 @@ def validate_anagram(str1, str2):
 
 # Input: "hello WORLD" -> Output: "Hello World"
 
-def convert_string_to_title_case():
-    pass
+def convert_string_to_title_case(string):
+    return string.title()
 
 # 13. Remove All Occurrences of a Character
 # Description
