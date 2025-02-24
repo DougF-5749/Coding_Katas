@@ -78,8 +78,13 @@ def character_frequency(string):
 # Input: "banana" -> "ban"
 # Input: "abcaabcd" -> "abcd"
 
-def remove_duplicate_characters():
-    pass
+def remove_duplicate_characters(string):
+    parsed_string = []
+    for char in string:
+        if char not in parsed_string:
+            parsed_string.append(char)
+            
+    return "".join(parsed_string)
 
 # 6. Find the Longest Word in a Sentence
 # Description
