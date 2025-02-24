@@ -7,8 +7,6 @@ from katas.lambda_functions import *
 #   square = lambda x: ...
 #   print(square(5))  Expected 25
 #   ```
-# Hints:
-# - Remember that \(x^2\) in Python is `x * x` or `x ** 2`.
 
 def test_square():
     assert square(5) == 25
@@ -24,14 +22,12 @@ def test_square():
 #   print(is_even(4))  Expected True
 #   print(is_even(5))  Expected False
 #   ```
-# Hints:
-# - An integer `n` is even if `n % 2 == 0`.
 
 def test_is_even():
     assert is_even(4) == True
     assert is_even(5) == False
     assert is_even(0) == True
-    assert is_even(-5) ==
+    assert is_even(-5) == False
 
 # 3. Return the Last Character of a String
 # Task: Write a lambda function that takes a string and returns its last character. If the string is empty, return `None` or an empty string.
@@ -41,8 +37,6 @@ def test_is_even():
 #   print(last_char("Hello"))  Expected 'o'
 #   print(last_char(""))       Expected None (or '')
 #   ```
-# Hints:
-# - Use Python’s **negative indexing** or a conditional check if the string is empty.
 
 def test_last_char():
     assert last_char("Hello") == 'o'
@@ -58,15 +52,12 @@ def test_last_char():
 #   filter_consonants = lambda lst: ...
 #   print(filter_consonants(letters))  Expected ['b', 'c', 'j']
 #   ```
-# Hints:
-# - Combine a **lambda** with `filter`, or use a list comprehension with a lambda inside if you prefer.
-# - Remember to handle both uppercase and lowercase if needed.
 
 def test_filter_out_consonants():
-    assert filter_consonants(['a', 'e', 'i', 'o', 'u']) == []
-    assert filter_consonants(['A', 'B', 'C', 'E', 'I', 'J']) == ['B', 'C', 'J']
-    assert filter_consonants(['A', 'E', 'I', 'O', 'U']) == []
-    assert filter_consonants(['a', 'b', 'c', 'e', 'i', 'j']) == ['b', 'c', 'j']
+    assert filter_out_consonants(['a', 'e', 'i', 'o', 'u']) == []
+    assert filter_out_consonants(['A', 'B', 'C', 'E', 'I', 'J']) == ['B', 'C', 'J']
+    assert filter_out_consonants(['A', 'E', 'I', 'O', 'U']) == []
+    assert filter_out_consonants(['a', 'b', 'c', 'e', 'i', 'j']) == ['b', 'c', 'j']
 
 # 5. Convert a List of Strings to Uppercase
 # Task: Given a list of strings, write a lambda (possibly combined with `map`) that returns a new list where each string is uppercase.
@@ -76,9 +67,6 @@ def test_filter_out_consonants():
 #   to_upper_list = lambda lst: ...
 #   print(to_upper_list(names))  Expected ['ALICE', 'BOB', 'CHARLIE']
 #   ```
-# Hints:
-# - You can use `map(lambda s: s.upper(), lst)` or a list comprehension.
-# - The result should be a *list*, so don’t forget to convert from map object to list in Python 3.
 
 def test_to_upper_list():
     assert to_upper_list(['alice', 'bob', 'charlie']) == ['ALICE', 'BOB', 'CHARLIE']
@@ -94,9 +82,6 @@ def test_to_upper_list():
 #   print(find_max([3, 1, 5, 2]))  Expected 5
 #   print(find_max([]))           Expected Should handle gracefully (maybe None or a default?)
 #   ```
-# Hints:
-# - Python’s built-in `max()` can do this directly, but if you want to get fancy, you might use `functools.reduce`.
-# - Decide how you want to handle an empty list—return `None` or handle errors.
 
 def test_find_max():
     assert find_max([3, 1, 5, 2]) == 5
@@ -111,9 +96,6 @@ def test_find_max():
 #   remove_duplicates = lambda lst: ...
 #   print(remove_duplicates([1, 2, 2, 3, 1]))  Expected [1, 2, 3]
 #   ```
-# Hints:
-# - You can do this in a single pass using a **seen set**. Consider how to integrate a lambda—maybe within a list comprehension or `filter`.
-# - Alternatively, think about the **`dict.fromkeys()`** trick for preserving order (in Python 3.7+).
 
 def test_remove_duplicates():
     assert remove_duplicates([1, 2, 2, 3, 1]) == [1, 2, 3]
@@ -130,9 +112,6 @@ def test_remove_duplicates():
 #   print(is_palindrome("racecar"))  Expected True
 #   print(is_palindrome("hello"))    Expected False
 #   ```
-# Hints:
-# - A string `s` is a palindrome if `s == s[::-1]`.
-# - Decide whether you need case-insensitive checks or handling of non-alphanumeric characters.
 
 def test_is_palindrome():
     assert is_palindrome("racecar") == True
@@ -148,9 +127,6 @@ def test_is_palindrome():
 #   sort_by_second = lambda t_list: ...
 #   print(sort_by_second(tuples))  Expected [(2, 'a'), (1, 'b'), (3, 'c')]
 #   ```
-# Hints:
-# - Use `sorted(t_list, key=lambda x: x[1])`.
-# - Consider stable sorting if elements have ties in the second position.
 
 def test_sort_by_second():
     assert sort_by_second([(1, 'b'), (2, 'a'), (3, 'c')]) == [(2, 'a'), (1, 'b'), (3, 'c')]
@@ -169,9 +145,6 @@ def test_sort_by_second():
 #   print(product_of_list([5]))          Expected 5
 #   print(product_of_list([]))           Expected ?? (decide how to handle)
 #   ```
-# Hints:
-# - `reduce(lambda x, y: x * y, lst, initial_value)` could be used; if you omit an initial value, be careful with empty lists.
-# - Alternatively, you can define default behavior (like returning `1` if the list is empty).
 
 def test_product_of_list():
     assert product_of_list([1, 2, 3, 4]) == 24
