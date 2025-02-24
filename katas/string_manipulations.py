@@ -248,19 +248,24 @@ def convert_string_to_title_case(string):
 def remove_all_occurrences_of_a_character(string, char):
     return "".join(list(filter(lambda x: x != char, string)))
 
-
-
 # 14. Mask/Obfuscate Part of a String
 # Description
-# Given a string (e.g., a credit card number or email), replace certain parts of the string with a masking character, for privacy. The rules can vary (for instance, show only the first 2 and last 2 characters, and mask everything in between).
+# Given a string (e.g., a credit card number or email), replace certain parts of the string with a masking character, for privacy. 
+# The rules can vary (for instance, show only the first 2 and last 2 characters, and mask everything in between).
 
 # Example:
 
 # Input: "1234567890" -> Output: "12******90"
 # Input: "abcdefg" -> Output: "ab***fg"
 
-def mask_obfuscate_part_of_a_string():
-    pass
+def mask_obfuscate_part_of_a_string(string):
+    # element_list = list(string)
+
+    start = string[:2]
+    middle = len(string[2:-2]) * "*"
+    end = string[-2:]
+
+    return start + middle + end
 
 # 15. Check if a String Contains All Letters of the Alphabet
 # Description
