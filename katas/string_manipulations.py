@@ -223,9 +223,8 @@ def generate_all_substrings(string):
 # Input: ("hello", "olleh") -> True
 # Input: ("abc", "abd") -> False
 
-def validate_anagram():
-    pass
-
+def validate_anagram(str1, str2):
+    return sorted(str1) == sorted(str2)
 
 # 12. Convert String to Title Case
 # Description
