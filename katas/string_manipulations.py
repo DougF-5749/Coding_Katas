@@ -118,8 +118,13 @@ def find_longest_word_in_sentence(sentence):
 # Input: "Hello world"
 # Output: "olleH dlrow"
 
-def reverse_each_word_in_sentence():
-    pass
+def reverse_each_word_in_sentence(string):
+    # split string into list using " " delimiter
+    word_list = string.split(" ")
+    # use list comprehsneion to return list of reversed words
+    reversed = [word[::-1] for word in word_list]
+    # return joined word in list into string using " " delimiter
+    return " ".join(reversed)
 
 # 8. String Compression
 # Description
