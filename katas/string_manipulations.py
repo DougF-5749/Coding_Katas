@@ -276,8 +276,12 @@ def mask_obfuscate_part_of_a_string(string):
 # Input: "The quick brown fox jumps over the lazy dog" -> True
 # Input: "Hello world" -> False
 
-def check_if_string_contains_all_letters_of_the_alphabet():
-    pass
+def check_if_string_contains_all_letters_of_the_alphabet(string):
+
+    alpha_only = [char for char in string.lower() if char.isalpha()]
+    
+    return len(set(alpha_only)) == 26
+
 
 # 16. Caesar Cipher Encryption
 # Description
