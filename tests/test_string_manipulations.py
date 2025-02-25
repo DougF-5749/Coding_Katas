@@ -156,8 +156,8 @@ def test_caesar_cipher_encryption():
     actual_1 = caesar_cipher_encryption("abc", 2)
     expected_1 = "cde"
 
-    actual_2 = caesar_cipher_encryption("xyz", 3)
-    expected_2 = "abc"  
+    actual_2 = caesar_cipher_encryption("XYZ", 3)
+    expected_2 = "ABC"  
 
     actual_3 = caesar_cipher_encryption("abc", 26)
     expected_3 = "abc"
@@ -165,10 +165,14 @@ def test_caesar_cipher_encryption():
     actual_4 = caesar_cipher_encryption("a2be", 5)
     expected_4 = "f2gj"
 
+    actual_5 = caesar_cipher_encryption("xyz", 3)
+    expected_5 = "abc"  
+
     assert actual_1 == expected_1
     assert actual_2 == expected_2
     assert actual_3 == expected_3
     assert actual_4 == expected_4
+    assert actual_5 == expected_5
 
 def test_find_the_longest_common_prefix():
     actual_1 = find_the_longest_common_prefix(["flower", "flow", "flight"])
