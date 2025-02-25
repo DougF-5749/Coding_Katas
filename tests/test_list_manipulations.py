@@ -68,6 +68,7 @@ def test_partition_list():
     assert partition_list([3, 5, 2, 6, 1], 5) == [3, 2, 1, 5, 6]
     assert partition_list([3, 5, 2, 6, 1], 1) == [1, 3, 5, 2, 6]
     assert partition_list([3, 5, 2, 6, 1], 6) == [3, 5, 2, 1, 6]
+    assert partition_list([3, 5, 2, 6, -1], 0) == [3, 5, 2, 6, -1]
     assert partition_list([3, 5, 2, 6, 1], 0) == [3, 5, 2, 6, 1]
 
 # Find All Pairs that Sum to a Target
