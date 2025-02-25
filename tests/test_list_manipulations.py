@@ -19,9 +19,9 @@ def test_rotate_list():
     assert rotate_list([1, 2, 3, 4, 5], 2) == [4, 5, 1, 2, 3]
     assert rotate_list([1, 2, 3, 4, 5], 0) == [1, 2, 3, 4, 5]
     assert rotate_list([1, 2, 3, 4, 5], 5) == [1, 2, 3, 4, 5]
-    assert rotate_list([1, 2, 3, 4, 5], 6) == [4, 5, 1, 2, 3]
+    assert rotate_list([1, 2, 3, 4, 5], 6) == [5, 1, 2, 3, 4]
     assert rotate_list([1, 2, 3, 4, 5], -2) == [3, 4, 5, 1, 2]
-    assert rotate_list([1, 2, 3, 4, 5], -6) == [5, 1, 2, 3, 4]
+    assert rotate_list([1, 2, 3, 4, 5], -6) == [2, 3, 4, 5, 1]
 
 # Remove Duplicates from a Sorted List
 # Task: Given a non-sorted list of intergers, remove duplicates in place and return the a new list.
