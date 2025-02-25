@@ -293,37 +293,21 @@ def check_if_string_contains_all_letters_of_the_alphabet(string):
 # Input: "xyz", shift = 3 -> Output: "abc"
 
 def caesar_cipher_encryption(string, shift):
-    # make sure shift value within size of alphabet
     shift %= 26
-    # encrypted string set to ""
     encrypted = ""
-    # loop for each char in string input
     for char in string:
-        # if char not .isalpha()
         if not char.isalpha():
-            # add char to encrypted
             encrypted += char
-        # else
         else:
-            # find the ascii code value for character (ord(char))  --> # 65-90 (a-z) or 97-122 (A_Z) inclusive
             ascii = ord(char)
-            # add shift value to the ascii code value (new_ascii)
             new_ascii = ascii + shift
-            # if (ascii 65-90 and new_ascii < 91) or (ascii 97-122 and new_ascii < 123)
             if ((65 <= ascii <= 90) and new_ascii < 91) or ((97 <= ascii <= 122) and new_ascii < 123):
-                # look up the new_char using chr(new_ascii)
-                # add new_char to encrypted string
                 encrypted += chr(new_ascii)
-            # if (ascii 65-90 and new_ascii > 90)
-            elif (65 <= ascii <= 90) and new_ascii > 90:
+            if (65 <= ascii <= 90) and new_ascii > 90:
                 new_ascii = new_ascii - 26
-                # look up the new_char using chr(new_ascii)
-                # add new_char to encrypted string
                 encrypted += chr(new_ascii)
             if ((97 <= ascii <= 122) and new_ascii > 122):
                 new_ascii = new_ascii - 26
-                # look up the new_char using chr(new_ascii)
-                # add new_char to encrypted string
                 encrypted += chr(new_ascii)
     return encrypted
 
