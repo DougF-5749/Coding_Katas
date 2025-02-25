@@ -3,8 +3,8 @@
 # Task: Reverse the elements of a list in-place (or return a new reversed list).
 # Example: Input [1, 2, 3] -> Output [3, 2, 1].
 
-def reverse_list():
-    pass
+def reverse_list(list):
+    return list[::-1] if len(list) != 0 else None
 
 # Rotate a List
 # Task: Shift all elements of a list to the left or right by k positions.
