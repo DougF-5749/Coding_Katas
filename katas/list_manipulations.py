@@ -20,12 +20,18 @@ def rotate_list(list, k):
     else:
         return list[k:] + list[:k]
 
-# Remove Duplicates from a Sorted List
+# Remove Duplicates from a non-sorted List
 # Task: Given a non-sorted list of intergers, remove duplicates in place and return the a new list.
 # Example: [1, 1, 2, 2, 3] -> [1, 2, 3].
 
-def remove_duplicates():
-    pass
+def remove_duplicates(list):
+    condensed_list = []
+
+    for e in sorted(list):
+        if e not in condensed_list:
+            condensed_list.append(e)
+
+    return condensed_list
 
 # Merge Two Sorted Lists
 # Task: Given two sorted lists, merge them into one sorted list.
