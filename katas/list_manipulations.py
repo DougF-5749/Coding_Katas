@@ -37,8 +37,8 @@ def remove_duplicates(list):
 # Task: Given two sorted lists, merge them into one sorted list.
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6].
 
-def merge_sorted_lists():
-    pass
+def merge_sorted_lists(list1, list2):
+    return sorted((list1 + list2))
 
 # Move Zeros to the End
 # Task: Given a list, move all 0s to the end while maintaining the order of the non-zero elements.
