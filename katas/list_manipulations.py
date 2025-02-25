@@ -51,11 +51,17 @@ def move_zeros_to_end(lst):
     return non_zero_list + zero_lst
 
 # Partition List
-# Task: Rearrange elements of a list so that those less than a pivot come before it, and those greater than or equal to the pivot come after it (like the partition step in QuickSort).
+# Task: Rearrange elements of a list so that those less than a pivot come before it, and those greater than or equal to the pivot come after it
 # Example: [3, 5, 2, 6, 1] pivot=3 -> [2, 1, 3, 5, 6].
 
-def partition_list():
-    pass
+def partition_list(lst, pivot):
+    pre_pivot = [e for e in lst if e < pivot]
+    after_pivot = [e for e in lst if e > pivot]
+
+    if pivot not in lst:
+        return lst
+    else:
+        return pre_pivot + [pivot] + after_pivot
 
 # Find All Pairs that Sum to a Target
 # Task: Given a list of numbers and a target, find all unique pairs whose sum equals the target.
