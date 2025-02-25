@@ -10,8 +10,15 @@ def reverse_list(list):
 # Task: Shift all elements of a list to the left or right by k positions.
 # Example: Rotate [1, 2, 3, 4, 5] right by 2 -> [4, 5, 1, 2, 3].
 
-def rotate_list():
-    pass
+def rotate_list(list, k):
+    k %= len(list)
+
+    if k == 0 or k == len(list):
+        return list
+    elif k > 0:
+        return list[-k:] + list[:-k]
+    else:
+        return list[k:] + list[:k]
 
 # Remove Duplicates from a Sorted List
 # Task: Given a non-sorted list of intergers, remove duplicates in place and return the a new list.
