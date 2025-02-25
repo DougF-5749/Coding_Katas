@@ -44,8 +44,11 @@ def merge_sorted_lists(list1, list2):
 # Task: Given a list, move all 0s to the end while maintaining the order of the non-zero elements.
 # Example: [0, 1, 0, 3, 12] -> [1, 3, 12, 0, 0].
 
-def move_zeros_to_end():
-    pass
+def move_zeros_to_end(lst):
+    non_zero_list = [e for e in lst if e != 0]
+    zero_lst = [e for e in lst if e == 0] 
+
+    return non_zero_list + zero_lst
 
 # Partition List
 # Task: Rearrange elements of a list so that those less than a pivot come before it, and those greater than or equal to the pivot come after it (like the partition step in QuickSort).
