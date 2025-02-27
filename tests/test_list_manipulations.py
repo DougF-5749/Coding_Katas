@@ -77,9 +77,9 @@ def test_partition_list():
 
 def test_find_all_pairs_that_sum_to_target():
     assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 9) == [(2, 7), (4, 5)]
-    assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 10) == [(7, 3)]
-    assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 11) == [(7, 4)]
-    assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 12) == [(7, 5)]
+    assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 10) == [(3, 7)]
+    assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 11) == [(4, 7)]
+    assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 12) == [(5, 7)]
     assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 13) == None
     assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 16) == None
 

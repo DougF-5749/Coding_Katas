@@ -69,16 +69,37 @@ def partition_list(lst, pivot):
 
 def find_all_pairs_that_sum_to_target(num_list, target):
     # BRUTE FORCE
-    pairs = []
-    for i in range(len(num_list)):
-        for j in range(i, len(num_list)):
-            if num_list[i] + num_list[j] == target and (num_list[i], num_list[j]) not in pairs and (num_list[j], num_list[i]) not in pairs and num_list[i] != num_list[j]:
-                pairs.append((num_list[i],  num_list[j]))
-    if len(pairs) == 0:
-        return None
-    else:
-        return pairs
+    # pairs = []
+    # for i in range(len(num_list)):
+    #     for j in range(i, len(num_list)):
+    #         if num_list[i] + num_list[j] == target and tuple(sorted((num_list[i], num_list[j]))) not in pairs and num_list[i] != num_list[j]:
+    #             pairs.append(tuple(sorted((num_list[i], num_list[j]))))
+    # if len(pairs) == 0:
+    #     return None
+    # else:
+    #     return pairs
+    
+    # HASH MAP ALGORITHM:
+    seen = set()            # Keeps track of numbers we've encountered using set
+    pairs = []              # Stores all valid pairs in the order we find them
 
+    for num in num_list:
+        complement = target - num
+        
+        if complement in seen:
+            # We have found a valid pair (complement, num).
+            # complement was in the list before num.
+            pair = tuple(sorted((complement, num)))     # sorted tuple means pairs are always given in ascending order
+            
+            # checjk if we've already recorded this exact pair.
+            if pair not in pairs:
+                pairs.append(pair)
+                
+        # Mark the current number as seen.
+        seen.add(num)
+
+    # Convert pairs back to a list (or just return pairs, if you prefer) else None
+    return pairs if pairs else None
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
