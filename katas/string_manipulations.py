@@ -320,7 +320,7 @@ def caesar_cipher_encryption(string, shift):
 # Input: ["flower", "flow", "flight"] -> Output: "fl"
 # Input: ["dog", "racecar", "car"] -> Output: "" (empty string)
 
-def find_the_longest_common_prefix():
+def find_the_longest_common_prefix(string_list):
     pass
 
 # 18. Remove All Non-Alphanumeric Characters
