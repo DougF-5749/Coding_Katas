@@ -67,8 +67,18 @@ def partition_list(lst, pivot):
 # Task: Given a list of numbers and a target, find all unique pairs whose sum equals the target.
 # Example: [2, 7, 4, 1, 3, 5, 7], target=9 -> Pairs: (2, 7) and (4, 5).
 
-def find_all_pairs_that_sum_to_target():
-    pass
+def find_all_pairs_that_sum_to_target(num_list, target):
+    # BRUTE FORCE
+    pairs = []
+    for i in range(len(num_list)):
+        for j in range(i, len(num_list)):
+            if num_list[i] + num_list[j] == target and (num_list[i], num_list[j]) not in pairs and (num_list[j], num_list[i]) not in pairs and num_list[i] != num_list[j]:
+                pairs.append((num_list[i],  num_list[j]))
+    if len(pairs) == 0:
+        return None
+    else:
+        return pairs
+
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
