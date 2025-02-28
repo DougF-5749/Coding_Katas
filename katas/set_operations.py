@@ -20,5 +20,11 @@ def disjoint_sets(set1, set2):
 # Task: Given a list from which some numbers are missing, find those missing. Using sets can simplify the logic.
 # Example: Suppose you expect numbers from 1..10, but only have [1,2,4,7,9]. Missing = {3,5,6,8,10}.
 
-def missing_numbers():
-    pass
+def missing_numbers(lst, start, end):
+    # APPROACH 1
+    missing = set()
+    lst = set(lst)  # a set is quicker to iterate through that a list with duplicates
+    for num in range(start, end + 1):
+        if num not in lst:
+            missing.add(num)
+    return missing
