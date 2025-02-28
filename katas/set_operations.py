@@ -22,9 +22,17 @@ def disjoint_sets(set1, set2):
 
 def missing_numbers(lst, start, end):
     # APPROACH 1
-    missing = set()
-    lst = set(lst)  # a set is quicker to iterate through that a list with duplicates
-    for num in range(start, end + 1):
-        if num not in lst:
-            missing.add(num)
-    return missing
+        # missing = set()
+        # lst = set(lst)  # a set is quicker to iterate through that a list with duplicates
+        # for num in range(start, end + 1):
+        #     if num not in lst:
+        #         missing.add(num)
+        # return missing
+    
+    # APPROACH 2 - no loops do better time complexity
+        # turn the range into a set
+    range_set = set(range(start, end +1))
+        # turn the list into a set
+    list_set = set(lst)
+        # return the difference between the two sets
+    return range_set - list_set
