@@ -13,8 +13,8 @@ def intercection_union_difference(set1, set2):
 # Task: Given two sets, determine if they have no elements in common.
 # Example: A = {1,3}, B = {2,4} -> Disjoint => True.
 
-def disjoint_sets():
-    pass
+def disjoint_sets(set1, set2):
+    return set1.isdisjoint(set2)
 
 # Find Missing Numbers
 # Task: Given a list from which some numbers are missing, find those missing. Using sets can simplify the logic.
