@@ -48,13 +48,13 @@ def test_symmetric_difference():
 # # True
 
 def test_subset():
-    expected_1 = subset_superset({1, 2}, {1, 2, 3, 4})
+    expected_1 = subset({1, 2}, {1, 2, 3, 4})
     actual_1 = True
 
-    expected_2 = subset_superset({1, 2, 3, 4}, {1, 2, 3, 4})
+    expected_2 = subset({1, 2, 3, 4}, {1, 2, 3, 4})
     actual_2 = True
 
-    expected_3 = subset_superset({1, 2, 3, 4}, {1, 2, 3})
+    expected_3 = subset({1, 2, 3, 4}, {1, 2, 3})
     actual_3 = False
 
     assert expected_1 == actual_1
