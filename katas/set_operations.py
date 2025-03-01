@@ -115,8 +115,6 @@ def unique_elements(*sets):
     # Return the set if it's non-empty, otherwise None
     return unique if unique else None
 
-
-
 # Count Elements Appearing in At Least Two Sets
 # Task: Given multiple sets, count how many of each element appear in at least two of them. reruen the element tyoe and its count in a dictionary. 
 # If no elements appear in at least two sets, return an empty -1.
@@ -126,8 +124,17 @@ def unique_elements(*sets):
 # C = {5, 6, 7}
 # # Elements appearing in at least two sets: {3: 2, 5: 2}
 
-def elements_appearing():
-    pass
+def elements_appearing_in_at_least_two(*sets):
+    from itertools import chain
+    from collections import Counter
+
+    chained = chain(*sets)
+
+    counted = Counter(chained)
+
+    in_two = {item: count for item, count in counted.items() if count >= 2}
+
+    return in_two if in_two else -1
 
 # Power Set (All Subsets of a Set)
 # Task: Given a set, return all possible subsets (the power set).  
