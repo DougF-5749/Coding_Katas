@@ -44,8 +44,8 @@ def missing_numbers(lst, start, end):
 # B = {2, 3, 4}  
 # # Symmetric Difference: {1, 4}
 
-def symmetric_difference():
-    pass
+def symmetric_difference(set1, set2):
+    return set1.symmetric_difference(set2)
 
 # Subset and Superset Check
 # Task: Given two sets, check if one is a subset of the other. Return True if it is, False otherwise.
