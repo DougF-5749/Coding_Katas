@@ -81,8 +81,41 @@ def common_elements(set1, *other_sets):
 # B = {3, 4, 5}  
 # C = {5, 6, 7}  
 
-def unique_elements():
-    pass
+def unique_elements(*sets):
+    # APPROACH 1
+    
+    # element_dict = {}
+
+    # for iterable in sets:
+    #     for e in iterable:
+    #         if e not in element_dict:
+    #             element_dict[e] = 1
+    #         else:
+    #             element_dict[e] += 1
+
+    # unique = [pair[0] for pair in element_dict.items() if pair[1] == 1]
+    # return None if not set(unique) else set(unique)
+
+    # KEY LEARNING POINT -> Defining a function with *args packs all positional arguments into a tuple. You can then loop over each argument in args.
+
+    # APPROACH 2
+    from collections import Counter
+    from itertools import chain
+
+    # Chain all iterables so we can treat them like one sequence
+    #  itertools.chain returns an iterator (effectively a “chain” of iterables).
+    all_elements = chain(*sets)
+
+    # Use Counter to track how many times each element appear
+    counter = Counter(all_elements)
+
+    # Gather elements that appear exactly once
+    unique = {item for item, count in counter.items() if count ==1 }
+
+    # Return the set if it's non-empty, otherwise None
+    return unique if unique else None
+
+
 
 # Count Elements Appearing in At Least Two Sets
 # Task: Given multiple sets, count how many of each element appear in at least two of them. reruen the element tyoe and its count in a dictionary. 
