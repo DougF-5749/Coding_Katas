@@ -8,8 +8,6 @@
 
 square = lambda x: x*x
 
-# print(square(5))
-
 # 2. Check if a Number is Even
 # Task: Write a lambda function that returns `True` if an integer is even, and `False` otherwise.
 # Example:
@@ -19,8 +17,7 @@ square = lambda x: x*x
 #   print(is_even(5))  Expected False
 #   ```
 
-def is_even():
-    pass
+is_even = lambda num: num % 2 == 0
 
 # 3. Return the Last Character of a String
 # Task: Write a lambda function that takes a string and returns its last character. If the string is empty, return `None` or an empty string.
