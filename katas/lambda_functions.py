@@ -1,5 +1,3 @@
-from katas.lambda_functions import *
-
 # 1. Square a Number
 # Task: Write a lambda function that takes a single integer `x` and returns its square.
 # Example:  
@@ -8,8 +6,9 @@ from katas.lambda_functions import *
 #   print(square(5))  Expected 25
 #   ```
 
-def square():
-    pass
+square = lambda x: x*x
+
+# print(square(5))
 
 # 2. Check if a Number is Even
 # Task: Write a lambda function that returns `True` if an integer is even, and `False` otherwise.
