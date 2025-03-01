@@ -54,8 +54,8 @@ def symmetric_difference(set1, set2):
 # B = {1, 2, 3, 4}  
 # # True
 
-def subset():
-    pass
+def subset(set1, set2):
+    return set1.issubset(set2)
 
 # Find Common Elements in Multiple Sets
 # Task: Given multiple sets, return the common elements among all of them. Rtuen None if there are no common elements. 
