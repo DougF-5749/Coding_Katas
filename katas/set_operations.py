@@ -65,8 +65,14 @@ def subset(set1, set2):
 # C = {3, 4, 5, 6}  
 # # Common elements: {3, 4}
 
-def common_elements():
-    pass
+def common_elements(set1, *other_sets):
+    # if not set1.intersection(*other_sets):
+    #     return None
+    # else:
+    #     return set1.intersection(*other_sets)
+
+    # SAME AS:
+    return None if not set1.intersection(*other_sets) else set1.intersection(*other_sets)
 
 # Find Unique Elements Across Multiple Sets
 # Task: Given multiple sets, return elements that appear in only one of the sets.  
