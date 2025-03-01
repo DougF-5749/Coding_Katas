@@ -109,14 +109,14 @@ def test_unique_elements():
 # C = {5, 6, 7}
 # # Elements appearing in at least two sets: {3: 2, 5: 2}
 
-def test_elements_appearing():
-    expected_1 = elements_appearing({1, 2, 3}, {3, 4, 5}, {5, 6, 7})
+def test_elements_appearing_in_at_least_two():
+    expected_1 = elements_appearing_in_at_least_two({1, 2, 3}, {3, 4, 5}, {5, 6, 7})
     actual_1 = {3: 2, 5: 2}
 
-    expected_2 = elements_appearing({1, 2, 3}, {3, 4, 5}, {5, 6, 7}, {1, 2, 3, 4, 5, 6, 7})
-    actual_2 = {3: 2, 5: 2}
+    expected_2 = elements_appearing_in_at_least_two({1, 2, 3}, {3, 4, 5}, {5, 6, 7}, {1, 2, 3, 4, 5, 6, 7})
+    actual_2 = {1:2, 2:2, 3: 3, 4:2, 5:3, 6:2, 7:2}
 
-    expected_3 = elements_appearing({1, 2, 3}, {4, 5, 6}, {7, 8, 9})
+    expected_3 = elements_appearing_in_at_least_two({1, 2, 3}, {4, 5, 6}, {7, 8, 9})
     actual_3 = -1
 
     assert expected_1 == actual_1
