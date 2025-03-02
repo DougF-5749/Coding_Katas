@@ -2,8 +2,23 @@
 # Task: Given a list of words, build a dictionary mapping each word to its count.
 # Example: ["apple", "banana", "apple"] -> {"apple": 2, "banana": 1}.
 
-def count_word_frequencies():
-    pass
+def count_word_frequencies(lst):
+    # APROACH 1
+    from collections import Counter
+    return Counter(lst)
+
+    # APPROACH 2
+    # count = {}
+
+    # for e in lst:
+    #     if e not in count:
+    #         count[e] = 1
+    #     else:
+    #         count[e] += 1
+
+    # return count
+            
+
 
 # Group Anagrams
 # Task: Given a list of words, group them together if they are anagrams of each other.
