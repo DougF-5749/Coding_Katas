@@ -64,8 +64,17 @@ def to_upper_list(string_list):
 #   print(find_max([]))           Expected Should handle gracefully (maybe None or a default?)
 #   ```
 
-def find_max():
-    pass
+def find_max(lst):
+    return list(filter(lambda num: num == max(lst), lst))[0] if lst else None
+
+# OBSERVATION vvv: 
+# The built-in max already returns the maximum element, so filtering the list again is redundant. 
+# You could simplify the function like this:
+# def find_max(lst):
+#     return max(lst, default=None)
+# This version returns the maximum element if the list isn’t empty and None otherwise.
+# The built-in max function will raise a ValueError if you pass it an empty sequence 
+
 
 # 7. Remove Duplicates from a List (While Preserving Order)
 # Task: Given a list, return a new list with **unique** elements, preserving the original order. Use a lambda if possible.
