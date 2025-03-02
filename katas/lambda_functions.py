@@ -52,8 +52,8 @@ def filter_out_consonants(letters):
 #   print(to_upper_list(names))  Expected ['ALICE', 'BOB', 'CHARLIE']
 #   ```
 
-def to_upper_list():
-    pass
+def to_upper_list(string_list):
+    return list(map(lambda x: x.upper(), string_list))
 
 # 6. Find the Maximum of a List
 # Task: Write a lambda expression that takes in a list of numbers and returns the maximum value.
