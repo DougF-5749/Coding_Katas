@@ -28,8 +28,7 @@ is_even = lambda num: num % 2 == 0
 #   print(last_char(""))       Expected None (or '')
 #   ```
 
-def last_char():
-    pass
+last_char = lambda str: str[-1] if str else None
 
 # 4. Filter Out Vowels from a List of Letters
 # Task: Write a one-line expression that filters out vowels (`a, e, i, o, u`) from a list of letters and returns only the consonants.
