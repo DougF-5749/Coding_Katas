@@ -39,8 +39,9 @@ last_char = lambda str: str[-1] if str else None
 #   print(filter_consonants(letters))  Expected ['b', 'c', 'j']
 #   ```
 
-def filter_out_consonants():
-    pass
+def filter_out_consonants(letters):
+    vowels = "aeiouAEIOU"
+    return list(filter(lambda e: e not in vowels, letters))
 
 # 5. Convert a List of Strings to Uppercase
 # Task: Given a list of strings, write a lambda (possibly combined with `map`) that returns a new list where each string is uppercase.
