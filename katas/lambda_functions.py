@@ -84,8 +84,16 @@ def find_max(lst):
 #   print(remove_duplicates([1, 2, 2, 3, 1]))  Expected [1, 2, 3]
 #   ```
 
-def remove_duplicates():
-    pass
+# def remove_duplicates(lst):
+#     seen = set()
+#     result = []
+#     for e in lst:
+#         if e not in seen:
+#             seen.add(e)
+#             result.append(e)
+#     return result
+
+remove_duplicates = lambda lst: (seen := set()) or [e for e in lst if e not in seen and not seen.add(e)]
 
 # 8. Check if a String is Palindromic
 # Task: Write a lambda function that returns `True` if the input string is a palindrome (reads the same forwards and backwards), otherwise `False`.

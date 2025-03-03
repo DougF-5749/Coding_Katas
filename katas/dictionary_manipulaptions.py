@@ -17,8 +17,6 @@ def count_word_frequencies(lst):
     #         count[e] += 1
 
     # return count
-            
-
 
 # Group Anagrams
 # Task: Given a list of words, group them together if they are anagrams of each other.
@@ -26,12 +24,14 @@ def count_word_frequencies(lst):
 
 def group_anagrams():
     pass
+
 # Invert a Dictionary
 # Task: Swap the keys and values in a dictionary (handle collisions/duplicate values carefully).
 # Example: {"a": 1, "b": 2, "c": 3} -> {1: "a", 2: "b", 3: "c"}.
 
-def invert_dictionary():
+def invert_dictionary(my_dict):
     pass
+        
 
 # Find the First Duplicate Character
 # Task: Given a string, find the first character that appears more than once using a dictionary to track counts.
