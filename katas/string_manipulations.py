@@ -331,8 +331,12 @@ def find_the_longest_common_prefix(string_list):
 
 # Input: "Hello, World!" -> Output: "HelloWorld"
 
-def remove_all_non_alphanumeric_characters():
-    pass
+def remove_all_non_alphanumeric_characters(string):
+    filtered_string = ""
+    for char in string:
+        if char.isalpha() or char.isdigit():
+            filtered_string += char
+    return filtered_string
 
 # 19. Find and Replace Pattern in a String
 # Description
