@@ -347,8 +347,11 @@ def remove_all_non_alphanumeric_characters(string):
 # Input: string="cats like to chase mice", pattern="cats", replacement="dogs"
 # Output: "dogs like to chase mice"
 
-def find_and_replace_pattern_in_a_string():
-    pass
+def find_and_replace_pattern_in_a_string(string, pattern, replacement):
+    if pattern in string:
+        return string.replace(pattern, replacement)
+    else:
+        return -1
 
 # 20. Sort Characters in a String
 # Description
