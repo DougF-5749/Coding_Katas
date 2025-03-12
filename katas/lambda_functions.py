@@ -104,8 +104,7 @@ remove_duplicates = lambda lst: (seen := set()) or [e for e in lst if e not in s
 #   print(is_palindrome("hello"))    Expected False
 #   ```
 
-def is_palindrome():
-    pass
+is_palindrome = lambda string: string[::-1] == string
 
 # 9. Sort a List of Tuples by the Second Item
 # Task: Write a lambda to **sort** (or return a sorted copy of) a list of tuples by the **second element** in each tuple.
