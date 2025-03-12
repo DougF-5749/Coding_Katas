@@ -311,18 +311,6 @@ def caesar_cipher_encryption(string, shift):
                 encrypted += chr(new_ascii)
     return encrypted
 
-# 17. Find the Longest Common Prefix
-# Description
-# Given a list of strings, find the longest common prefix. If there isn’t one, return an empty string.
-
-# Example:
-
-# Input: ["flower", "flow", "flight"] -> Output: "fl"
-# Input: ["dog", "racecar", "car"] -> Output: "" (empty string)
-
-def find_the_longest_common_prefix(string_list):
-    pass
-
 # 18. Remove All Non-Alphanumeric Characters
 # Description
 # Given a string, remove all characters that are not letters or digits (for instance, punctuation, symbols, etc.).
