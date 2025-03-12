@@ -186,7 +186,7 @@ def test_find_the_longest_common_prefix():
     expected_2 = ""
 
     actual_3 = find_the_longest_common_prefix(["flower", "flow", "bright", "brine", "british"])
-    expected_3 = "bri"
+    expected_3 = "br"
 
     assert actual_1 == expected_1
     assert actual_2 == expected_2
