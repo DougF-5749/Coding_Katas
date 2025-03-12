@@ -363,5 +363,8 @@ def find_and_replace_pattern_in_a_string(string, pattern, replacement):
 # Input: "banana" -> Output: "aaabnn"
 
 
-def sort_characters_in_a_string():
-    pass
+def sort_characters_in_a_string(string):
+    char_list = list(string)
+    char_list.sort()
+    sorted_string = "".join(char_list)
+    return sorted_string
