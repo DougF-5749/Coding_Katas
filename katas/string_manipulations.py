@@ -21,7 +21,19 @@ def reverse_string(string):
 # Input: "hello" -> Output: False
 
 def check_palindrome(string):
-    return string == string[::-1]
+
+    # NON-RECURSIVE
+    # return string == string[::-1]
+
+    # RECURSIVE
+    # define base case
+    if len(string) < 2:     # same as if string == "" or len(string) == 1:
+        return True
+    if string[0] != string[-1]:
+        return False
+    return check_palindrome(string[1:-1])
+
+
 
 # 3. Count Vowels and Consonants
 # Description
