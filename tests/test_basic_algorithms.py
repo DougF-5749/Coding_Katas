@@ -12,7 +12,7 @@ def test_factorial():
     assert expected_2 == 1
 
     expected_3 = factorial(1)
-    assert expected_2 == 1
+    assert expected_3 == 1
 
 # Fibonacci
 # Task: Compute the nth Fibonacci number.
