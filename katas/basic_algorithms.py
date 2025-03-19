@@ -24,21 +24,31 @@ def permutations():
 # If the target is not in the list, return -1.
 # Example: binary_search([1,2,3,4,5], 4) -> 3 (0-based indexing).
 
-def binary_search(array, search_value):
+def binary_search(lst, search_value):
+    # establish lower sand upper bounds of search range (0th and last index of the list)
     lower_bound = 0
-    upper_bound = len(array) - 1
+    upper_bound = len(lst) - 1
 
+    # loop to instect the middlemost value - "lower_bound <= upper_bound" means loop ends if tghere is no range left to inspect
     while lower_bound <= upper_bound:
+        # floor divide (//) to account for odd list length
         midpoint = (lower_bound + upper_bound) // 2
-        value_at_midpoint = array[midpoint]
+        # inspect the list midpoint and assign it to midpoint variable
+        value_at_midpoint = lst[midpoint]
 
+        # if value at midpoint is what we are looking for, return its index.
         if search_value == value_at_midpoint:
             return midpoint
+        # search value is less than midpoint (i.e. earlier in the list)
         elif search_value < value_at_midpoint:
+            #  change upper bound for nexct loop immediately to left of current midpoint
             upper_bound = midpoint - 1
+        # search value is greater than midpoint (i.e. later in the list)
         elif search_value > value_at_midpoint:
+            #  change lower bound for next loop immediately to right of current midpoint
             lower_bound = midpoint + 1
-
+    
+    # if range is narrowed to 0 elements, search value is not in the list. return -1
     return -1
 
 # Merge Sort (or other sorting)
