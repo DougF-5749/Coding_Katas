@@ -55,5 +55,16 @@ def binary_search(lst, search_value):
 # Task: Implement merge sort (or quicksort, etc.) for a list of numbers.
 # Key Points: Understanding divide-and-conquer and recursion.
 
-def merge_sort():
-    pass
+def merge_sort(lst):
+    # bubble sort (quadratic time)
+    unsorted_until_index = len(lst) - 1
+    is_sorted = False
+
+    while not is_sorted:
+        is_sorted = True
+        for i in range(unsorted_until_index):
+            if lst[i] > lst[i+1]:
+                lst[i], lst[i+1] = lst[i+1], lst[i]
+                is_sorted = False
+        unsorted_until_index -= 1
+    return lst
