@@ -56,7 +56,7 @@ def binary_search(lst, search_value):
 # Key Points: Understanding divide-and-conquer and recursion.
 
 def merge_sort(lst):
-    # bubble sort (quadratic time)
+    # BUBBLE SORT (quadratic time - relatively INEFFICIENT)
     unsorted_until_index = len(lst) - 1
     is_sorted = False
 
