@@ -75,7 +75,14 @@ def merge_sort(lst):
         for j in range(i+1, len(lst)):
             if lst[j] < lst[lowest_number_index]:
                 lowest_number_index = j
+        # checks if lowest_number_index is different from current index - if different swap needs to occur
         if lowest_number_index != i:
+            # # temporary varbiable to store value of lst[i]
+            # temp = lst[i]
+            # # value at lst[i] replaced with lst[lower_number_inbdex], movinf smallest element to correct position
+            # lst[i] = lst[lowest_number_index]
+            # # original value at list (sotored in temp) is nplaced in lst[lowest_number_index] - this complete the swap
+            # lst[lowest_number_index] = temp
             lst[i], lst[lowest_number_index] = lst[lowest_number_index], lst[i]
     
     return lst
