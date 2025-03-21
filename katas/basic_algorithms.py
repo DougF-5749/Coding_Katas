@@ -76,8 +76,6 @@ def merge_sort(lst):
             if lst[j] < lst[lowest_number_index]:
                 lowest_number_index = j
         if lowest_number_index != i:
-            temp = lst[i]
-            lst[i] = lst[lowest_number_index]
-            lst[lowest_number_index] = temp
+            lst[i], lst[lowest_number_index] = lst[lowest_number_index], lst[i]
     
     return lst
