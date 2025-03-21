@@ -56,15 +56,28 @@ def binary_search(lst, search_value):
 # Key Points: Understanding divide-and-conquer and recursion.
 
 def merge_sort(lst):
-    # BUBBLE SORT (quadratic time - relatively INEFFICIENT)
-    unsorted_until_index = len(lst) - 1
-    is_sorted = False
+# BUBBLE SORT (quadratic time - relatively INEFFICIENT)
+    # unsorted_until_index = len(lst) - 1
+    # is_sorted = False
 
-    while not is_sorted:
-        is_sorted = True
-        for i in range(unsorted_until_index):
-            if lst[i] > lst[i+1]:
-                lst[i], lst[i+1] = lst[i+1], lst[i]
-                is_sorted = False
-        unsorted_until_index -= 1
+    # while not is_sorted:
+    #     is_sorted = True
+    #     for i in range(unsorted_until_index):
+    #         if lst[i] > lst[i+1]:
+    #             lst[i], lst[i+1] = lst[i+1], lst[i]
+    #             is_sorted = False
+    #     unsorted_until_index -= 1
+    # return lst
+
+# SELECTION SORT (quadrartic time - N**2 / 2 --> O(N**2))
+    for i in range(len(lst) - 1):
+        lowest_number_index = i
+        for j in range(i+1, len(lst)):
+            if lst[j] < lst[lowest_number_index]:
+                lowest_number_index = j
+        if lowest_number_index != i:
+            temp = lst[i]
+            lst[i] = lst[lowest_number_index]
+            lst[lowest_number_index] = temp
+    
     return lst
