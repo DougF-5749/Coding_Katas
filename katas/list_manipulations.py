@@ -106,6 +106,8 @@ def find_all_pairs_that_sum_to_target(num_list, target):
 # Task: Calculate the mean average of all even numbers in a list of numbers
 # Example: [1, 2, 3, 4, 5, 6] -> 4
 
+
+# Big O analysis -> worse case: O(3N + 5) -> O(N)
 def average_even(lst):
     if not lst:
         return "No list given"
