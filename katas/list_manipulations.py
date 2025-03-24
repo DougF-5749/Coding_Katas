@@ -106,6 +106,9 @@ def find_all_pairs_that_sum_to_target(num_list, target):
 # Task: Calculate the mean average of all even numbers in a list of numbers
 # Example: [1, 2, 3, 4, 5, 6] -> 4
 
+def average_even(lst):
+    pass
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
