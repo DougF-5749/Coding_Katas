@@ -107,7 +107,18 @@ def find_all_pairs_that_sum_to_target(num_list, target):
 # Example: [1, 2, 3, 4, 5, 6] -> 4
 
 def average_even(lst):
-    pass
+    if not lst:
+        return "No list given"
+
+    sum = 0
+    count = 0
+
+    for i in lst:
+        if i % 2 == 0:
+            sum += i
+            count += 1
+    
+    return sum // count if count > 0 else "No even numbers"
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
