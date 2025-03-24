@@ -97,10 +97,10 @@ def test_average_even():
     expected_3 = 2
     actual_3 = average_even([1,2,3])
 
-    expected_4 = 0
+    expected_4 = "No even numbers"
     actual_4 = average_even([1,3,5])
 
-    expected_5 = None
+    expected_5 = "No list given"
     actual_5 = average_even([])
 
     assert expected_1 == actual_1
