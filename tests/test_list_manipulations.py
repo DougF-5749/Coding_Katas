@@ -83,6 +83,32 @@ def test_find_all_pairs_that_sum_to_target():
     assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 13) == None
     assert find_all_pairs_that_sum_to_target([2, 7, 4, 1, 3, 5, 7], 16) == None
 
+# Average Even
+# Task: Calculate the mean average of all even numbers in a list of numbers
+# Example: [1, 2, 3, 4, 5, 6] -> 4
+
+def test_average_even():
+    expected_1 = 4
+    actual_1 = average_even([1,2,3,4,5,6])
+
+    expected_2 = 3
+    actual_2 = average_even([1,2,3,4,5])
+
+    expected_3 = 2
+    actual_3 = average_even([1,2,3])
+
+    expected_4 = 0
+    actual_4 = average_even([1,3,5])
+
+    expected_5 = None
+    actual_5 = average_even([])
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+    assert expected_3 == actual_3
+    assert expected_4 == actual_4
+    assert expected_5 == actual_5
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
