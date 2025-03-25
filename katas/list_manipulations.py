@@ -146,7 +146,17 @@ def word_builder(lst):
 # Example: [1,2,3,4,5] -> [2,3,4,5,6,8,10,12,15,20]
 
 def two_number_products(array):
-    pass
+    
+    if not array:
+        return "No list given"
+    
+    products = []
+
+    for i in range(len(array) - 1):
+        for j in range(i+1, len(array)):
+            products.append(array[i] * array[j])
+    
+    return products
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
