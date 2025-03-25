@@ -145,6 +145,7 @@ def word_builder(lst):
 # Task: Return an array conataining the priduct of every combination of two numbers from an array of numbers
 # Example: [1,2,3,4,5] -> [2,3,4,5,6,8,10,12,15,20]
 
+# Big O time analysis -> (N - 1) + (N - 2) + ... + 1 -> N(N - 1)/2 -> O(N²)
 def two_number_products(array):
     
     if not array:
