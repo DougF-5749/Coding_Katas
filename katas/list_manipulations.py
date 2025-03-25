@@ -122,16 +122,16 @@ def average_even(lst):
     
     return sum // count if count > 0 else "No even numbers"
 
-# Flatten a Nested List
-# Task: Convert a list that may contain nested lists into a single, flat list.
-# Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
-
 # Word Builder
 # Task: Collect every combination of two character strings from a list/array of single characters
 # Example: ['a', 'b', 'c', 'd'] -> ['ab', 'ac', 'ad', 'ba', 'bc', 'bd', 'ca', 'cb', 'cd', 'da', 'db', 'dc']
 
 def word_builder():
     pass
+
+# Flatten a Nested List
+# Task: Convert a list that may contain nested lists into a single, flat list.
+# Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
 
 def flatten_nested_list():
     pass
