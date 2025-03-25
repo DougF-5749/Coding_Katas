@@ -141,6 +141,13 @@ def word_builder(lst):
 
     return collection
 
+# Get All Two Number Products
+# Task: Return an array conataining the priduct of every combination of two numbers from an array of numbers
+# Example: [1,2,3,4,5] -> [2,3,4,5,6,8,10,12,15,20]
+
+def two_number_products(array):
+    pass
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
