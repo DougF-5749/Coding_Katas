@@ -126,8 +126,19 @@ def average_even(lst):
 # Task: Collect every combination of two character strings from a list/array of single characters
 # Example: ['a', 'b', 'c', 'd'] -> ['ab', 'ac', 'ad', 'ba', 'bc', 'bd', 'ca', 'cb', 'cd', 'da', 'db', 'dc']
 
-def word_builder():
-    pass
+def word_builder(lst):
+    
+    if not lst:
+        return "No list given"
+    
+    collection = []
+
+    for i in range(len(lst)):
+        for j in range(len(lst)):
+            if i != j:
+                collection.append(lst[i] + lst[j])
+
+    return collection
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
