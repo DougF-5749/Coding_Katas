@@ -109,6 +109,20 @@ def test_average_even():
     assert expected_4 == actual_4
     assert expected_5 == actual_5
 
+# Word Builder
+# Task: Collect every combination of two character strings from a list/array of single characters
+# Example: ['a', 'b', 'c', 'd'] -> ['ab', 'ac', 'ad', 'ba', 'bc', 'bd', 'ca', 'cb', 'cd', 'da', 'db', 'dc']
+
+def test_word_builder():
+    expected_1 = ['ab', 'ac', 'ad', 'ba', 'bc', 'bd', 'ca', 'cb', 'cd', 'da', 'db', 'dc']
+    actual_1 = word_builder(['a', 'b', 'c', 'd'])
+
+    expected_2 = "No list given"
+    actual_2 = word_builder([])
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
