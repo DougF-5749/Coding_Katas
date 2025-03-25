@@ -123,6 +123,20 @@ def test_word_builder():
     assert expected_1 == actual_1
     assert expected_2 == actual_2
 
+# Get All Two Number Products
+# Task: Return an array conataining the priduct of every combination of two numbers from an array of numbers
+# Example: [1,2,3,4,5] -> [2,3,4,5,6,8,10,12,15,20]
+
+def test_two_number_products():
+    expected_1 = [2,3,4,5,6,8,10,12,15,20]
+    actual_1 = two_number_products([1,2,3,4,5])
+
+    expected_2 = "No list given"
+    actual_2 = two_number_products([])
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
