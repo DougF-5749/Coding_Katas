@@ -159,6 +159,10 @@ def two_number_products(array):
     
     return products
 
+# Two Array Products
+# Task: return an array containing the products from every number in one array with every number in a second array
+# Example: [1, 2, 3] and [10, 100, 1000] -> [10, 100,1000, 20, 200, 2000, 30, 300, 3000]
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
