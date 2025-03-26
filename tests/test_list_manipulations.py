@@ -137,6 +137,24 @@ def test_two_number_products():
     assert expected_1 == actual_1
     assert expected_2 == actual_2
 
+# Two Array Products
+# Task: return an array containing the products from every number in one array with every number in a second array
+# Example: [1, 2, 3] and [10, 100, 1000] -> [10, 100,1000, 20, 200, 2000, 30, 300, 3000]
+
+def test_two_array_products():
+    expected_1 = [10, 100, 1000, 20, 200, 2000, 30, 300, 3000]
+    actual_1 = two_array_products([1, 2, 3], [10, 100, 1000])
+
+    expected_2 = "Missing first array"
+    actual_2 = two_array_products([], [10, 100, 1000])
+
+    expected_3 = "Missing second array"
+    actual_3 = two_array_products([1, 2, 3], [])
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+    assert expected_3 == actual_3
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
