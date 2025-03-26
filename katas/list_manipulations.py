@@ -164,7 +164,18 @@ def two_number_products(array):
 # Example: [1, 2, 3] and [10, 100, 1000] -> [10, 100,1000, 20, 200, 2000, 30, 300, 3000]
 
 def two_array_products(array_1, array_2):
-    pass
+    if not array_1:
+        return "Missing first array"
+    if not array_2:
+        return "Missing second array"
+    
+    products = []
+    
+    for i in range(len(array_1)):
+        for j in range(len(array_2)):
+            products.append(array_1[i] * array_2[j])
+    
+    return products
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
