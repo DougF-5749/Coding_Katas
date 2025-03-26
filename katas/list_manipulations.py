@@ -163,6 +163,8 @@ def two_number_products(array):
 # Task: return an array containing the products from every number in one array with every number in a second array
 # Example: [1, 2, 3] and [10, 100, 1000] -> [10, 100,1000, 20, 200, 2000, 30, 300, 3000]
 
+# Big O time analysis -> 4NM + 4 -> O(M*N) bilinear time
+# Two different arrays so cant say N^2 (even though we know they are the same length in the test)
 def two_array_products(array_1, array_2):
     if not array_1:
         return "Missing first array"
