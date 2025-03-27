@@ -179,6 +179,12 @@ def two_array_products(array_1, array_2):
     
     return products
 
+# 100-Sum Array
+# Task: return True if an array is a 100-Sum array
+# [1, 2, 7, 99] -> True
+# [2, 2, 98, 99] -> True
+# [2, 2, 7, 99] -> False
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
