@@ -185,6 +185,10 @@ def two_array_products(array_1, array_2):
 # [2, 2, 98, 99] -> True
 # [2, 2, 7, 99] -> False
 
+def one_hundred_sum_array():
+    pass
+
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
