@@ -192,7 +192,7 @@ def one_hundred_sum_array(array):
     # if array[0] + array[-1] == 100:
     #     return True
     # return one_hundred_sum_array(array[1:-1])
-# NON-RECURSIVE
+# NON-RECURSIVE time analysis: N/2 -> O(N)
     left_index = 0
     right_index = len(array) - 1
 
