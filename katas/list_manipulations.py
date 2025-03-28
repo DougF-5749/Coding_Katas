@@ -187,11 +187,22 @@ def two_array_products(array_1, array_2):
 
 def one_hundred_sum_array(array):
 # RECURSIVE - O(N^2)
-    if len(array) < 2:
-        return False
-    if array[0] + array[-1] == 100:
-        return True
-    return one_hundred_sum_array(array[1:-1])
+    # if len(array) < 2:
+    #     return False
+    # if array[0] + array[-1] == 100:
+    #     return True
+    # return one_hundred_sum_array(array[1:-1])
+# NON-RECURSIVE
+    left_index = 0
+    right_index = len(array) - 1
+
+    while left_index < (len(array) / 2):
+        if array[left_index] + array[right_index] != 100:
+            return False
+        left_index += 1
+        right_index -= 1
+        
+    return True
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
