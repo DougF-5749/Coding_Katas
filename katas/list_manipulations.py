@@ -186,8 +186,7 @@ def two_array_products(array_1, array_2):
 # [2, 2, 7, 99] -> False
 
 def one_hundred_sum_array(array):
-# RECURSIVE
-    # define base case
+# RECURSIVE - O(N^2)
     if len(array) < 2:
         return False
     if array[0] + array[-1] == 100:
