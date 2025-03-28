@@ -185,9 +185,14 @@ def two_array_products(array_1, array_2):
 # [2, 2, 98, 99] -> True
 # [2, 2, 7, 99] -> False
 
-def one_hundred_sum_array():
-    pass
-
+def one_hundred_sum_array(array):
+# RECURSIVE
+    # define base case
+    if len(array) < 2:
+        return False
+    if array[0] + array[-1] == 100:
+        return True
+    return one_hundred_sum_array(array[1:-1])
 
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
