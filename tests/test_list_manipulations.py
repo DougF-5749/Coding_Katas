@@ -155,6 +155,20 @@ def test_two_array_products():
     assert expected_2 == actual_2
     assert expected_3 == actual_3
 
+# Merge Sort
+# Task: Merge two sorted arrays together to create a new sorted array
+# Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
+
+def test_merge_sort(array_1, array_2):
+    expected_1 = [1, 2, 3, 4, 5, 6]
+    actual_1 = merge_sort([1, 3, 5], [2, 4, 6])
+    
+    expected_2 = [1, 2, 3, 4, 5, 6]
+    actual_2 = merge_sort([2, 4, 6], [1, 3, 5])
+
+    assert actual_1 == expected_1
+    assert actual_2 == expected_2
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
