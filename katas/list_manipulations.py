@@ -204,6 +204,12 @@ def one_hundred_sum_array(array):
         
     return True
 
+# Merge Sort
+# Task: Merge two sorted arrays together to create a new sorted array
+# Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
+
+
+
 # Flatten a Nested List
 # Task: Convert a list that may contain nested lists into a single, flat list.
 # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
