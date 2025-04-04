@@ -162,7 +162,14 @@ def test_two_array_products():
 # [2, 2, 7, 99] -> False
 
 def test_one_hundred_sum_array():
-    pass
+    expected_1 = True
+    actual_1 = one_hundred_sum_array([1, 2, 7, 99])
+    
+    expected_2 = True
+    actual_2 = one_hundred_sum_array([2, 2, 98, 99])
+
+    expected_3 = False
+    actual_3 = one_hundred_sum_array([2, 2, 7, 99])
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
