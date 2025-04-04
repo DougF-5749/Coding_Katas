@@ -155,6 +155,15 @@ def test_two_array_products():
     assert expected_2 == actual_2
     assert expected_3 == actual_3
 
+# 100-Sum Array
+# Task: return True if an array is a 100-Sum array
+# [1, 2, 7, 99] -> True
+# [2, 2, 98, 99] -> True
+# [2, 2, 7, 99] -> False
+
+def test_one_hundred_sum_array():
+    pass
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
