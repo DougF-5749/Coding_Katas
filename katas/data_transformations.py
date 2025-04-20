@@ -12,5 +12,5 @@ def return_name_and_price(json_string):
 
 # Convert Python dictionary back to JSON string
 
-def dict_to_json_string():
-    pass
+def dict_to_json_string(dictionary):
+    return json.dumps(dictionary)
