@@ -9,3 +9,8 @@ def return_name_and_price(json_string):
 
     # return new dictionary containingn price and product name
     return {k:v for (k,v) in python_dict.items() if k != "available"}
+
+# Convert Python dictionary back to JSON string
+
+def dict_to_json_string():
+    pass
