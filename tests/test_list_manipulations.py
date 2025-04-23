@@ -215,6 +215,28 @@ def test_return_first_duplicate():
     assert expected_2 == actual_2
     assert expected_3 == actual_3
 
+# Missing alphabet character
+# Task: Write a function that accepts a string thatb contains all the letters of the alphabet except one and returns the missing letter
+# Example: "the quick brown box jumps over the lazy dog" -> "f"
+
+def test_missing_alpha():
+    expected_1 = "f"
+    actual_1 = missing_alpha("the quick brown box jumps over the lazy dog")
+
+    expected_2 = "a"
+    actual_2 = missing_alpha("bcdefghijklmnopqrstuvwxyz")
+
+    expected_3 = None
+    actual_3 = missing_alpha("abcdefghijklmnopqrstuvwxyz")
+
+    expected_4 = None
+    actual_4 = missing_alpha("")
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+    assert expected_3 == actual_3
+    assert expected_4 == actual_4
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
