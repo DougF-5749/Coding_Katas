@@ -197,6 +197,24 @@ def test_get_intersection():
     assert expected_3 == actual_3
     assert expected_4 == actaul_4
 
+# return first duplicate
+# Task: Write a function that takes an array of strings and returns the first duplicate value it finds
+# Example: ["a", "b", "c", "d", "c", "e", "f"] -> "c"
+
+def test_return_first_duplicate():
+    expected_1 = "c"
+    actual_1 = return_first_duplicate(["a", "b", "c", "d", "c", "e", "f"])
+
+    expected_2 = None
+    actual_2 = return_first_duplicate(["a", "b", "c", "d", "e", "f"])
+
+    expected_3 = None
+    actual_3 = return_first_duplicate([])
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+    assert expected_3 == actual_3
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
