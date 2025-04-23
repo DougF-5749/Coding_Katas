@@ -222,6 +222,13 @@ def get_intersection(array_1, array_2):
 
     return intersection
 
+# return first duplicate
+# Task: Write a function that takes an array of strings and returns the first duplicate value it finds
+# Example: ["a", "b", "c", "d", "c", "e", "f"] -> "c"
+
+def return_first_duplicate():
+    pass
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
