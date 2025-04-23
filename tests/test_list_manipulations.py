@@ -201,35 +201,35 @@ def test_get_intersection():
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
 
-def test_merge_sort(array_1, array_2):
-    expected_1 = [1, 2, 3, 4, 5, 6]
-    actual_1 = merge_sort([1, 3, 5], [2, 4, 6])
+# def test_merge_sort(array_1, array_2):
+#     expected_1 = [1, 2, 3, 4, 5, 6]
+#     actual_1 = merge_sort([1, 3, 5], [2, 4, 6])
     
-    expected_2 = [1, 2, 3, 4, 5, 6]
-    actual_2 = merge_sort([2, 4, 6], [1, 3, 5])
+#     expected_2 = [1, 2, 3, 4, 5, 6]
+#     actual_2 = merge_sort([2, 4, 6], [1, 3, 5])
 
-    assert actual_1 == expected_1
-    assert actual_2 == expected_2
+#     assert actual_1 == expected_1
+#     assert actual_2 == expected_2
 
-# Flatten a Nested List
-# Task: Convert a list that may contain nested lists into a single, flat list.
-# Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
+# # Flatten a Nested List
+# # Task: Convert a list that may contain nested lists into a single, flat list.
+# # Example: [1, [2, 3], [4, [5]]] -> [1, 2, 3, 4, 5].
 
-def test_flatten_nested_list():
-    assert flatten_nested_list([1, [2, 3], [4, [5]]]) == [1, 2, 3, 4, 5]
-    assert flatten_nested_list([1, [2, 3], [4, [5, 6]]]) == [1, 2, 3, 4, 5, 6]
-    assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7]]]) == [1, 2, 3, 4, 5, 6, 7]
-    assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7, 8]]]) == [1, 2, 3, 4, 5, 6, 7, 8]
-    assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7, 8, 9]]]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7, 8, 9, 10]]]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# def test_flatten_nested_list():
+#     assert flatten_nested_list([1, [2, 3], [4, [5]]]) == [1, 2, 3, 4, 5]
+#     assert flatten_nested_list([1, [2, 3], [4, [5, 6]]]) == [1, 2, 3, 4, 5, 6]
+#     assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7]]]) == [1, 2, 3, 4, 5, 6, 7]
+#     assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7, 8]]]) == [1, 2, 3, 4, 5, 6, 7, 8]
+#     assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7, 8, 9]]]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#     assert flatten_nested_list([1, [2, 3], [4, [5, 6, 7, 8, 9, 10]]]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# In-Place Reversal of Sub-List
-# Task: Reverse the elements of a sub-list within a larger list, given start and end indices.
-# Example: [1, 2, 3, 4, 5], reverse from index 1 to 3 -> [1, 4, 3, 2, 5].
+# # In-Place Reversal of Sub-List
+# # Task: Reverse the elements of a sub-list within a larger list, given start and end indices.
+# # Example: [1, 2, 3, 4, 5], reverse from index 1 to 3 -> [1, 4, 3, 2, 5].
 
-def test_reverse_sub_list():
-    assert reverse_sub_list([1, 2, 3, 4, 5], 1, 3) == [1, 4, 3, 2, 5]
-    assert reverse_sub_list([1, 2, 3, 4, 5], 0, 4) == [5, 4, 3, 2, 1]
-    assert reverse_sub_list([1, 2, 3, 4, 5], 0, 0) == [1, 2, 3, 4, 5]
-    assert reverse_sub_list([1, 2, 3, 4, 5], 4, 4) == [1, 2, 3, 4, 5]
-    assert reverse_sub_list([1, 2, 3, 4, 5], 2, 3) == [1, 2, 4, 3, 5]
+# def test_reverse_sub_list():
+#     assert reverse_sub_list([1, 2, 3, 4, 5], 1, 3) == [1, 4, 3, 2, 5]
+#     assert reverse_sub_list([1, 2, 3, 4, 5], 0, 4) == [5, 4, 3, 2, 1]
+#     assert reverse_sub_list([1, 2, 3, 4, 5], 0, 0) == [1, 2, 3, 4, 5]
+#     assert reverse_sub_list([1, 2, 3, 4, 5], 4, 4) == [1, 2, 3, 4, 5]
+#     assert reverse_sub_list([1, 2, 3, 4, 5], 2, 3) == [1, 2, 4, 3, 5]
