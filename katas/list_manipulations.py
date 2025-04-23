@@ -240,6 +240,13 @@ def return_first_duplicate(array):
 
     return None
 
+# Missing alphabet character
+# Task: Write a function that accepts a string thatb contains all the letters of the alphabet except one and returns the missing letter
+# Example: "the quick brown box jumps over the lazy dog" -> "f"
+
+def missing_alpha():
+    pass
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
