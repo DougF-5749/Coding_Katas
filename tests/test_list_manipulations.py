@@ -189,9 +189,13 @@ def test_get_intersection():
     expected_3 = [1, 2]
     actual_3 = get_intersection([1, 2], [1, 2])
 
+    expected_4 = [1,2,3]
+    actaul_4 = get_intersection([1,2,3,4,5], [0,1,2,3])
+
     assert expected_1 == actual_1
     assert expected_2 == actual_2
     assert expected_3 == actual_3
+    assert expected_4 == actaul_4
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
