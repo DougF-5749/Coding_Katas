@@ -1,4 +1,4 @@
-
+ 
 # Reverse a List
 # Task: Reverse the elements of a list in-place (or return a new reversed list).
 # Example: Input [1, 2, 3] -> Output [3, 2, 1].
@@ -203,6 +203,13 @@ def one_hundred_sum_array(array):
         right_index -= 1
         
     return True
+
+# INtersection of two arrays
+# Task: Write a function that returns the interesction of two arrays. The intersection is  third array that contains all the values contained in the first two arrays
+# Example: [1,2,3,4,5] and [0,2,4,6,8] -> [2,4]
+
+def get_intersection():
+    pass
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
