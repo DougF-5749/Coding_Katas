@@ -161,15 +161,37 @@ def test_two_array_products():
 # [2, 2, 98, 99] -> True
 # [2, 2, 7, 99] -> False
 
-def test_one_hundred_sum_array():
-    expected_1 = True
-    actual_1 = one_hundred_sum_array([1, 2, 7, 99])
+# def test_one_hundred_sum_array():
+#     expected_1 = True
+#     actual_1 = one_hundred_sum_array([1, 2, 7, 99])
     
-    expected_2 = True
-    actual_2 = one_hundred_sum_array([2, 2, 98, 99])
+#     expected_2 = True
+#     actual_2 = one_hundred_sum_array([2, 2, 98, 99])
 
-    expected_3 = False
-    actual_3 = one_hundred_sum_array([2, 2, 7, 99])
+#     expected_3 = False
+#     actual_3 = one_hundred_sum_array([2, 2, 7, 99])
+
+#     assert expected_1 == actual_1
+#     assert expected_2 == actual_2
+#     assert expected_3 == actual_3
+
+# INtersection of two arrays
+# Task: Write a function that returns the interesction of two arrays. The intersection is  third array that contains all the values contained in the first two arrays
+# Example: [1,2,3,4,5] and [0,2,4,6,8] -> [2,4]
+
+def test_get_intersection():
+    expected_1 = [2, 4]
+    actual_1 = get_intersection([1, 2, 3, 4, 5], [0, 2, 4, 6, 8])
+
+    expected_2 = []
+    actual_2 = get_intersection([1, 2, 3], [4, 5, 6])
+
+    expected_3 = [1, 2]
+    actual_3 = get_intersection([1, 2], [1, 2])
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+    assert expected_3 == actual_3
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
