@@ -216,7 +216,8 @@ def get_intersection(array_1, array_2):
         hash_table[e] = True
 
     for e in array_2:
-        if hash_table.get(e):
+        if hash_table.get(e):   
+        # use .get() rather than direct access to aboid KeyError as .get() returns None if key not in dictionary
             intersection.append(e)
 
     return intersection
