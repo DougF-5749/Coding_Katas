@@ -209,23 +209,13 @@ def one_hundred_sum_array(array):
 # Example: [1,2,3,4,5] and [0,2,4,6,8] -> [2,4]
 
 def get_intersection(array_1, array_2):
-    # determine which array is bigger 
-    larger_array = []
-    smaller_array = []
     hash_table = {}
     intersection = []
 
-    if len(array_1) > len(array_2):
-        larger_array = array_1
-        smaller_array = array_2
-    else:
-        larger_array = array_2
-        smaller_array = array_1
-
-    for e in larger_array:
+    for e in array_1:
         hash_table[e] = True
 
-    for e in smaller_array:
+    for e in array_2:
         if hash_table.get(e):
             intersection.append(e)
 
