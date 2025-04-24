@@ -241,11 +241,25 @@ def return_first_duplicate(array):
     return None
 
 # Missing alphabet character
-# Task: Write a function that accepts a string thatb contains all the letters of the alphabet except one and returns the missing letter
+# Task: Write a function that accepts a string that contains all the letters of the...
+# alphabet except one and returns the missing letter
 # Example: "the quick brown box jumps over the lazy dog" -> "f"
 
-def missing_alpha():
-    pass
+def missing_alpha(string):
+    if not string:
+        return None
+    
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+    hash_map = {}
+
+    for char in string.lower():
+        hash_map[char] = True
+    
+    for char in alpha:
+        if not hash_map.get(char):
+            return char
+    return None
+
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
