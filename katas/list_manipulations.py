@@ -264,8 +264,22 @@ def missing_alpha(string):
 # Task: Return the first non-duplicated character in a string.
 # Example: "minimum" -> "n"
 
-def first_non_duplicated():
-    pass
+def first_non_duplicated(string):
+    if not string:
+        return None
+
+    seen_hash_map = {}
+
+    for e in string:
+        if not seen_hash_map.get(e):
+            seen_hash_map[e] = 1
+        else:
+            seen_hash_map[e] += 1
+    
+    for e in string:
+        if seen_hash_map[e] == 1:
+            return e
+
 
 
 # Merge Sort
