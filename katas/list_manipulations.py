@@ -260,6 +260,13 @@ def missing_alpha(string):
             return char
     return None
 
+# Non-duplicated haracter in string
+# Task: Return the first non-duplicated character in a string.
+# Example: "minimum" -> "n"
+
+def first_non_duplicated():
+    pass
+
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
