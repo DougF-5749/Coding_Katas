@@ -237,6 +237,24 @@ def test_missing_alpha():
     assert expected_3 == actual_3
     assert expected_4 == actual_4
 
+# Non-duplicated haracter in string
+# Task: Return the first non-duplicated character in a string.
+# Example: "minimum" -> "n"
+
+def test_first_non_duplicated():
+    expected_1 = "n"
+    actual_1 = first_non_duplicated("minimum")
+
+    expected_2 = None
+    actual_2 = first_non_duplicated("aabbcc")
+
+    expected_3 = None
+    actual_3 = first_non_duplicated("")
+
+    assert expected_1 == actual_1
+    assert expected_2 == actual_2
+    assert expected_3 == actual_3
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
