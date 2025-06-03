@@ -1,20 +1,27 @@
 # 🟢 Beginner Katas
 
-# 1️⃣ Sum of Digits (Recursive Digit Sum)
+# Factorial of a number
+#    - Problem: Calculate the factorial of a number using recursion.
+#    - Example: factorial(3) -> 6
+
+def factorial(n):
+    pass
+
+# Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
 #    - Example:
 #      ```python
 #      digital_root(942)  # 9 + 4 + 2 = 15 → 1 + 5 = 6
 #      ```
 
-# 2️⃣ Reverse a String Recursively
+# Reverse a String Recursively
 #    - Problem: Given a string, return its reverse using recursion.
 #    - Example:
 #      ```python
 #      reverse("hello")  # "olleh"
 #      ```
 
-# 3️⃣ Power of a Number
+# Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
 #      ```python
@@ -23,7 +30,7 @@
 
 # 🟡 Intermediate Katas
 
-# 4️⃣ Palindrome Check (Recursive)
+# Palindrome Check (Recursive)
 #    - Problem: Check if a string is a palindrome using recursion.
 #    - Example:
 #      ```python
@@ -31,14 +38,14 @@
 #      is_palindrome("hello")    # False
 #      ```
 
-# 5️⃣ Recursive Fibonacci (Optimize with Memoization!)
+# Recursive Fibonacci (Optimize with Memoization!)
 #    - Problem: Return the nth Fibonacci number using recursion.
 #    - Example:
 #      ```python
 #      fibonacci(6)  # 8
 #      ```
 
-# 6️⃣ Flatten a Nested List
+# Flatten a Nested List
 #    - Problem: Convert a nested list into a single list.
 #    - Example:
 #      ```python
@@ -47,14 +54,14 @@
 
 # 🔴 Advanced Katas
 
-# 7️⃣ Tower of Hanoi
+# Tower of Hanoi
 #    - Problem: Solve the classic Tower of Hanoi problem with n disks.
 #    - Example:
 #      ```python
 #      tower_of_hanoi(3, 'A', 'C', 'B')  # Moves disks from A to C using B as auxiliary
 #      ```
 
-# 8️⃣ Generate All Balanced Parentheses
+# Generate All Balanced Parentheses
 #    - Problem: Given `n`, generate all combinations of balanced parentheses.
 #    - Example:
 #      ```python
@@ -62,7 +69,7 @@
 #      # Output: ["((()))", "(()())", "(())()", "()(())", "()()()"]
 #      ```
 
-# 9️⃣ Permutations of a String
+# Permutations of a String
 #    - Problem: Generate all possible permutations of a given string.
 #    - Example:
 #      ```python
@@ -70,7 +77,7 @@
 #      # Output: ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
 #      ```
 
-# 🔟 Count Ways to Climb Stairs
+# Count Ways to Climb Stairs
 #    - Problem: You can take 1 or 2 steps at a time. Given `n` stairs, find the number of ways to reach the top.
 #    - Example:
 #      ```python
