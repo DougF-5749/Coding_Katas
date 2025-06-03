@@ -1,3 +1,5 @@
+from katas.recursuion_katas import *
+
 # 🟢 Beginner Katas
 
 # Factorial of a number
