@@ -1,5 +1,19 @@
 # 🟢 Beginner Katas
 
+# Factorial of a number
+#    - Problem: Calculate the factorial of a number using recursion.
+#    - Example: factorial(3) -> 6
+
+def test_factorial():
+    actual = factorial(3)
+    expected = 6
+
+    actual_2 = factorial(5)
+    expected_2 = 120
+
+    assert actual == expected
+    assert actual_2 == expected_2
+
 # 1️⃣ Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
 #    - Example:
