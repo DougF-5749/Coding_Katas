@@ -5,7 +5,10 @@
 #    - Example: factorial(3) -> 6
 
 def factorial(n):
-    pass
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
 # Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
