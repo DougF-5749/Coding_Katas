@@ -48,6 +48,13 @@ def reverse_string(string):
         return string[0]
     return reverse_string(string[1:]) + string[0]
 
+# Letter count
+#   Problem: count the number of a specified letter occurances there are in a given string
+#   Example: count_char("axbxcxd") -> 3
+
+def count_char(string, char):
+    pass
+
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
