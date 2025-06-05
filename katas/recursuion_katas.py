@@ -23,8 +23,11 @@ def double_array(array, index=0):
 # Sum values in an array of integers 
 #    - Example: array_sum([1,2,3,4,5]) -> 15
 
-def array_sum():
-    pass
+def array_sum(array):
+    if len(array) == 1:
+        return array[0] 
+    
+    return array[0] + array_sum(array[1:])
 
 # Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
