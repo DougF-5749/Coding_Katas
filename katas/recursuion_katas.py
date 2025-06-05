@@ -90,6 +90,17 @@ def return_evens(array):
         return [array[0]] + return_evens(array[1:])
     else:
         return return_evens(array[1:])
+    
+# Triangular numbers
+#   Example: tri_numbers(7) -> 28
+#   Example: tri_numbers(6) -> 21
+#   Example: tri_numbers(5) -> 15
+
+def tri_numbers(n):
+    if n == 1:
+        return 1
+    return n + tri_numbers(n-1)
+
 
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.

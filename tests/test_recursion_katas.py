@@ -125,6 +125,20 @@ def test_total_chars():
 def test_return_evens():
     assert return_evens([1,2,3,4,5]) == [2,4]
 
+# Triangular numbers
+#   Example: tri_numbers(7) -> 28
+#   Example: tri_numbers(6) -> 21
+#   Example: tri_numbers(5) -> 15
+
+def test_tri_numbers():
+    assert tri_numbers(7) == 28
+    assert tri_numbers(6) == 21
+    assert tri_numbers(5) == 15
+    assert tri_numbers(4) == 10
+    assert tri_numbers(3) == 6
+    assert tri_numbers(2) == 3
+    assert tri_numbers(1) == 1
+
 # 3️⃣ Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
