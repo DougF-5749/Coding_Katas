@@ -36,6 +36,13 @@ def array_sum(array):
 #      digital_root(942)  # 9 + 4 + 2 = 15 → 1 + 5 = 6
 #      ```
 
+def sum_of_digits(num):
+    if num < 10:
+        return num
+    
+    digital_sum = sum(int(digit) for digit in str(num))
+    return sum_of_digits(digital_sum)
+
 # Reverse a String Recursively
 #    - Problem: Given a string, return its reverse using recursion.
 #    - Example:

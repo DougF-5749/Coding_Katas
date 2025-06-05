@@ -53,15 +53,15 @@ def test_array_sum():
 #      digital_root(942)  # 9 + 4 + 2 = 15 → 1 + 5 = 6
 #      ```
 
-# def test_sum_of_digits():
-#     actual = sum_of_digits(942)
-#     expected = 6
+def test_sum_of_digits():
+    actual = sum_of_digits(942)
+    expected = 6
 
-#     actual_2 = sum_of_digits(123)
-#     expected_2 = 6
+    actual_2 = sum_of_digits(123)
+    expected_2 = 6
 
-#     assert actual == expected
-#     assert actual_2 == expected_2
+    assert actual == expected
+    assert actual_2 == expected_2
 
 # 2️⃣ Reverse a String Recursively
 #    - Problem: Given a string, return its reverse using recursion.
