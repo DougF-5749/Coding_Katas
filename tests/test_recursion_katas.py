@@ -29,6 +29,23 @@ def test_double_array():
     assert actual == expected
     assert actual_2 == expected_2
 
+# Sum values in an array of integers 
+#    - Example: array_sum([1,2,3,4,5]) -> 15
+
+def test_array_sum():
+    actual_1 = array_sum([1,2,3,4,5])
+    expected_1 = 15
+
+    actual_2 = array_sum([0,1,2,3,4])
+    expected_2 = 14
+
+    actual_3 = array_sum([1,2,3,4])
+    expected_3 = 14
+
+    assert actual_1 == expected_1
+    assert actual_2 == expected_2
+    assert actual_3 == expected_3
+
 # 1️⃣ Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
 #    - Example:
