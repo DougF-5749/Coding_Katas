@@ -37,10 +37,10 @@ def test_array_sum():
     expected_1 = 15
 
     actual_2 = array_sum([0,1,2,3,4])
-    expected_2 = 14
+    expected_2 = 10
 
     actual_3 = array_sum([1,2,3,4])
-    expected_3 = 14
+    expected_3 = 10
 
     assert actual_1 == expected_1
     assert actual_2 == expected_2
