@@ -16,6 +16,19 @@ def test_factorial():
     assert actual == expected
     assert actual_2 == expected_2
 
+# Double values in an array of integers 
+#    - Example: double_array([1,2,3,4,5]) -> [2,4,6,8,10]
+
+def test_double_array():
+    actual = double_array([1,2,3,4,5])
+    expected = [2,4,6,8,10]
+
+    actual_2 = double_array([0,1,2,3,4])
+    expected_2 = [0,2,4,6,8]
+    
+    assert actual == expected
+    assert actual_2 == expected_2
+
 # 1️⃣ Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
 #    - Example:
