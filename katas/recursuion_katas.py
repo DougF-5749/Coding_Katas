@@ -53,6 +53,9 @@ def reverse_string(string):
 #   Example: count_char("axbxcxd") -> 3
 
 def count_char(string, char):
+    if not string:
+        return 0
+
     if len(string) == 0:
         return 0 
 
