@@ -80,6 +80,17 @@ def total_chars(array):
     
     return len(array[0]) + total_chars(array[1:])
 
+# Return array of even numbers
+#   Example: return_evens([1,2,3,4,5]) -> [2,4]
+
+def return_evens(array):
+    if len(array) == 0:
+        return []
+    if array[0] % 2 == 0:
+        return [array[0]] + return_evens(array[1:])
+    else:
+        return return_evens(array[1:])
+
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:

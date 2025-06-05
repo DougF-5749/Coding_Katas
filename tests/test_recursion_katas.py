@@ -119,6 +119,12 @@ def test_total_chars():
 
     assert actual == expected
 
+# Return array of even numbers
+#   Example: return_evens([1,2,3,4,5]) -> [2,4]
+
+def test_return_evens():
+    assert return_evens([1,2,3,4,5]) == [2,4]
+
 # 3️⃣ Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
