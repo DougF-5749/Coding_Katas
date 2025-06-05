@@ -53,7 +53,13 @@ def reverse_string(string):
 #   Example: count_char("axbxcxd") -> 3
 
 def count_char(string, char):
-    pass
+    if len(string) == 0:
+        return 0 
+
+    if string[0] == char:
+        return 1 + count_char(string[1:], char)
+    else:
+        return count_char(string[1:], char)
 
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
