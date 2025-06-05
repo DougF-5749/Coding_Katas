@@ -84,6 +84,24 @@ def test_reverse_string():
     assert actual_2 == expected_2
     assert actual_3 == expected_3
 
+# Letter count
+#   Problem: count the number of a specified letter occurances there are in a given string
+#   Example: count_char("axbxcxd") -> 3
+
+def test_count_char():
+    actual_1 = count_char("axbxcxd", "x")
+    expected_1 = 3
+
+    actual_2 = count_char("axbxcxd", "a")
+    expected_2 = 1
+
+    actual_3 = count_char("axbxcxd", "z")
+    expected_3 = 0
+
+    assert actual_1 == expected_1
+    assert actual_2 == expected_2
+    assert actual_3 == expected_3
+
 # 3️⃣ Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
