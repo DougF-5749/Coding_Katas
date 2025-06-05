@@ -20,6 +20,12 @@ def double_array(array, index=0):
     double_array(array, index + 1)
     return array
 
+# Sum values in an array of integers 
+#    - Example: array_sum([1,2,3,4,5]) -> 15
+
+def array_sum():
+    pass
+
 # Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
 #    - Example:
