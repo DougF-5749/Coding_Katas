@@ -97,10 +97,14 @@ def test_count_char():
 
     actual_3 = count_char("axbxcxd", "z")
     expected_3 = 0
+    
+    actual_4 = count_char("", "z")
+    expected_4 = 0
 
     assert actual_1 == expected_1
     assert actual_2 == expected_2
     assert actual_3 == expected_3
+    assert actual_4 == expected_4
 
 # 3️⃣ Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
