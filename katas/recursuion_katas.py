@@ -70,6 +70,15 @@ def count_char(string, char):
         return 1 + count_char(string[1:], char)
     else:
         return count_char(string[1:], char)
+    
+# Total character in array of strings
+#   Example: total_chars(["ab", "c", "def", ghij]) --> 10
+
+def total_chars(array):
+    if len(array) == 0:
+        return 0
+    
+    return len(array[0]) + total_chars(array[1:])
 
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
@@ -133,3 +142,10 @@ def count_char(string, char):
 #      ```python
 #      count_ways(4)  # Output: 5 (Ways: [1,1,1,1], [1,1,2], [1,2,1], [2,1,1], [2,2])
 #      ```
+
+def number_of_paths(n):
+    if n < 0:
+        return 0
+    if n == 1 or n == 0:
+        return 1
+    return number_of_paths(n-1) + number_of_paths(n-2)

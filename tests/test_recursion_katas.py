@@ -110,6 +110,15 @@ def test_count_char():
     assert actual_4 == expected_4
     assert actual_5 == expected_5
 
+# Total character in array of strings
+#   Example: total_chars(["ab", "c", "def", "ghij"]) --> 10
+
+def test_total_chars():
+    actual = total_chars(["ab", "c", "def", "ghij"])
+    expected = 10
+
+    assert actual == expected
+
 # 3️⃣ Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
@@ -212,3 +221,9 @@ def test_flatten():
 #      ```python
 #      count_ways(4)  # Output: 5 (Ways: [1,1,1,1], [1,1,2], [1,2,1], [2,1,1], [2,2])
 #      ```
+
+def test_number_of_paths():
+    actual = number_of_paths(4)
+    expected = 5
+
+    assert actual == expected
