@@ -13,8 +13,12 @@ def factorial(n):
 # Double values in an array of integers 
 #    - Example: double_array([1,2,3,4,5]) -> [2,4,6,8,10]
 
-def double_array():
-    pass
+def double_array(array, index=0):
+    if index >= len(array):
+        return
+    array[index] *= 2
+    double_array(array, index + 1)
+    return array
 
 # Sum of Digits (Recursive Digit Sum)
 #    - Problem: Given a number, recursively sum its digits until you get a single-digit number.
