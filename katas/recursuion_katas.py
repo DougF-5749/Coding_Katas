@@ -42,8 +42,11 @@ def array_sum(array):
 #      ```python
 #      reverse("hello")  # "olleh"
 #      ```
-def reverse_string():
-    pass
+def reverse_string(string):
+    # basecase
+    if len(string) == 1:
+        return string[0]
+    return reverse_string(string[1:]) + string[0]
 
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
