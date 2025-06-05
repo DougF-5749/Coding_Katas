@@ -101,6 +101,14 @@ def tri_numbers(n):
         return 1
     return n + tri_numbers(n-1)
 
+# Index of chacracter:
+#   Example: index_of_char("abcdefghijklmnopqrstuvwxyz", "x") -> 23
+
+def index_of_char(string, char):
+    if string[0] == char:
+        return 0
+    
+    return index_of_char(string[1:], char) + 1
 
 # Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.

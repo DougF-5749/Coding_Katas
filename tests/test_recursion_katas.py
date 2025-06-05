@@ -139,6 +139,14 @@ def test_tri_numbers():
     assert tri_numbers(2) == 3
     assert tri_numbers(1) == 1
 
+# Index of chacracter:
+#   Example: index_of_char("abcdefghijklmnopqrstuvwxyz", "x") -> 23
+
+def test_index_of_char():
+    assert index_of_char("abcdefghijklmnopqrstuvwxyz", "x") == 23
+    assert index_of_char("abcdefghijklmnopqrstuvwxyz", "a") == 0
+    assert index_of_char("abcdefghijklmnopqrstuvwxyz", "z") == 25
+
 # 3️⃣ Power of a Number
 #    - Problem: Implement a function to compute \( a^b \) using recursion.
 #    - Example:
