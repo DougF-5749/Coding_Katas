@@ -134,6 +134,32 @@ def index_of_char(string, char):
 #      fibonacci(6)  # 8
 #      ```
 
+# def fibonacci(n, memo={}): #RECURSIVE
+#     # base case -> the first 2 numbers in the series
+#     if n <= 1:
+#         return n
+#     # check hash table to see if fibonacci(n) was already computed
+#     if not memo.get(n):
+#         # if n is not in memo, compute finonacci(n) and stoire it in the table
+#         memo[n] = fibonacci(n - 2, memo) + fibonacci(n - 1, memo)
+
+#     # return fibonacci(n)'s result which now must be stored in the hash table
+#     return memo[n]
+
+def fibonacci(n):
+    if n == 0:
+        return 0
+
+    a = 0
+    b = 1
+
+    for i in range(1,n):
+        temp = a
+        a = b
+        b = temp + a
+
+    return b
+
 # Flatten a Nested List
 #    - Problem: Convert a nested list into a single list.
 #    - Example:
