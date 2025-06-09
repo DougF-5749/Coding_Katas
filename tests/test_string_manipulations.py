@@ -204,3 +204,29 @@ def test_sort_characters_in_a_string():
 
     assert actual == expected
     assert actual_2 == expected_2
+
+def test_sum_numbers_in_string():
+    actual_1 = sum_numbers_in_string('')
+    expected_1 = None
+
+    actual_2 = sum_numbers_in_string('jdf222sdfk32f3')
+    expected_2 = 257
+
+    actual_3 = sum_numbers_in_string('jdf221sdfk32f3k')
+    expected_3 = 256
+    
+    actual_4 = sum_numbers_in_string('d12g3')
+    expected_4 = 15
+    
+    actual_5 = sum_numbers_in_string('123')
+    expected_5 = 123
+    
+    actual_6 = sum_numbers_in_string('abc')
+    expected_6 = None
+
+    assert actual_1 == expected_1
+    assert actual_2 == expected_2
+    assert actual_3 == expected_3
+    assert actual_4 == expected_4
+    assert actual_5 == expected_5
+    assert actual_6 == expected_6

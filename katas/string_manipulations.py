@@ -362,6 +362,29 @@ def find_and_replace_pattern_in_a_string(string, pattern, replacement):
 # Input: "cba" -> Output: "abc"
 # Input: "banana" -> Output: "aaabnn"
 
-
 def sort_characters_in_a_string(string):
     return "".join(sorted(list(string)))
+
+def sum_numbers_in_string(string):
+    if not string:
+        return None
+    
+    temp_string = ''
+    number_array = []
+
+    for i in range(0,len(string)):
+        if string[i].isdigit():
+            temp_string += string[i]
+        if not string[i].isdigit():
+            if temp_string:
+                number_array.append(int(temp_string))
+                temp_string = ''
+
+    if temp_string:
+        number_array.append(int(temp_string))
+    
+    if number_array:
+        return sum(number_array)
+    else:
+        return None
+
