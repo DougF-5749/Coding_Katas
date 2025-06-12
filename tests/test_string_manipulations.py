@@ -223,6 +223,18 @@ def test_sum_numbers_in_string():
     
     actual_6 = sum_numbers_in_string('abc')
     expected_6 = None
+    
+    actual_7 = sum_numbers_in_string('a1b-1c')
+    expected_7 = 0
+    
+    actual_8 = sum_numbers_in_string('a1b-1-1c')
+    expected_8 = -1
+    
+    actual_9 = sum_numbers_in_string('a1b-1--1c')
+    expected_9 = -1
+    
+    actual_10 = sum_numbers_in_string('a1b-1--1c--')
+    expected_10 = -1
 
     assert actual_1 == expected_1
     assert actual_2 == expected_2
@@ -230,3 +242,7 @@ def test_sum_numbers_in_string():
     assert actual_4 == expected_4
     assert actual_5 == expected_5
     assert actual_6 == expected_6
+    assert actual_7 == expected_7
+    assert actual_8 == expected_8
+    assert actual_9 == expected_9
+    assert actual_10 == expected_10

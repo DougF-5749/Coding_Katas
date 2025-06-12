@@ -52,7 +52,7 @@ def count_vowels_and_consonants(string):
     for e in string.lower():
         # isalpha and is in aeiuo
         if e.isalpha() and e in vowels:
-            print(e)
+            # print(e)
             # v_count += 1
             v_count += 1
         # isalpha and is not in aeiuo
@@ -369,22 +369,44 @@ def sum_numbers_in_string(string):
     if not string:
         return None
     
+    # negative = False
     temp_string = ''
     number_array = []
 
     for i in range(0,len(string)):
-        if string[i].isdigit():
-            temp_string += string[i]
-        if not string[i].isdigit():
+        # if the element is char or '-'
+        if (string[i].isdigit() or string[i] == '-'):
+            # check whether element is char or '-'
+            if string[i] == '-':
+                # if element is '-'
+                # check if '-' is already in temp_string
+                if '-' not in temp_string:
+                    # if '-' not present then add element (which must be '-') to temp_string
+                    temp_string += string[i]
+                # if '-' is present
+                else:
+                    if any(char.isdigit() for char in temp_string):
+                    # add what is currently in the temp_string to numbers_array
+                        number_array.append(int(temp_string))
+                    # reset temp_string
+                        temp_string = ''
+                    # add current '-' symbol to temp_string -> temp_string should now == '-'
+                        temp_string += string[i]
+            # if string is a digit add digit to temp_string
+            else:
+                temp_string += string[i]
+        if not (string[i].isdigit() or string[i] == '-'):
             if temp_string:
                 number_array.append(int(temp_string))
                 temp_string = ''
 
-    if temp_string:
-        number_array.append(int(temp_string))
+    if temp_string and temp_string != '-':
+            number_array.append(int(temp_string))
     
     if number_array:
         return sum(number_array)
     else:
         return None
+
+# sum_numbers_in_string('a1b-1--1c-')
 
