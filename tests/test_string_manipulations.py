@@ -278,3 +278,10 @@ def test_is_valid_parentheses():
     assert is_valid_parentheses("([)]") == False  
     assert is_valid_parentheses("{[]}") == True  
     assert is_valid_parentheses("]") == False
+
+def test_roman_to_int():
+    assert roman_to_int("III") == 3  
+    assert roman_to_int("IV") == 4  
+    assert roman_to_int("IX") == 9  
+    assert roman_to_int("LVIII") == 58      # L = 50, V = 5, III = 3  
+    assert roman_to_int("MCMXCIV") == 1994  # M = 1000, CM = 900, XC = 90, IV = 4 
