@@ -408,3 +408,9 @@ def sum_numbers_in_string(string):
         return sum(number_array)
     else:
         return None
+    
+# Given a string s, return the index of the first character that repeats. If all characters are unique, return -1.
+# EXAMPLE: first_repeating_char("abca") -> 3   # 'a' repeats at index 3
+
+def first_repeating_char(s: str) -> int:
+    pass
