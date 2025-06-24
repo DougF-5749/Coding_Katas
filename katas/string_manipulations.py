@@ -1,3 +1,4 @@
+from collections import Counter
 # 1. Reverse a String
 # Description
 # Given a string, return the string in reverse order.
@@ -179,15 +180,16 @@ def string_compression(string):
 # Input: "aabb" -> None (no unique character)
 
 def first_non_repeating_character(string):
-    frequency = {}
+    # frequency = {}
+    frequency = Counter(string)
     non_repeating = []
 
     # use a dictionary to track frequency of each character 
-    for char in string:
-        if char not in frequency:
-            frequency[char] = 1
-        else:
-            frequency[char] += 1
+    # for char in string:
+    #     if char not in frequency:
+    #         frequency[char] = 1
+    #     else:
+    #         frequency[char] += 1
 
     # loop thorugh each string element and check for frequency == 1
     for char in string:
@@ -374,7 +376,7 @@ def sum_numbers_in_string(string):
 
     for i in range(0,len(string)):
         # if the element is char or '-'
-        if (string[i].isdigit() or string[i] == '-' or string[i] == "."):
+        if (string[i].isdigit() or string[i] == '-'):
             # check whether element is char or '-'
             if string[i] == '-':
                 # if element is '-'
@@ -386,7 +388,7 @@ def sum_numbers_in_string(string):
                 else:
                     if any(char.isdigit() for char in temp_string):
                     # add what is currently in the temp_string to numbers_array
-                        number_array.append(float(temp_string))
+                        number_array.append(int(temp_string))
                     # reset temp_string
                         temp_string = ''
                     # add current '-' symbol to temp_string -> temp_string should now == '-'
@@ -396,21 +398,13 @@ def sum_numbers_in_string(string):
                 temp_string += string[i]
         if not (string[i].isdigit() or string[i] == '-'):
             if temp_string:
-                number_array.append(float(temp_string))
+                number_array.append(int(temp_string))
                 temp_string = ''
 
     if temp_string and temp_string != '-':
-            number_array.append(float(temp_string))
+            number_array.append(int(temp_string))
     
     if number_array:
         return sum(number_array)
     else:
         return None
-
-# Given two strings s and t, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. 
-# If no such substring exists, return an empty string "".
-# The solution should strive for O(n) time complexity where possible.
-# Example: min_window("ADOBECODEBANC", "ABC") -> "BANC"
-
-def min_window(s: str, t: str) -> str:
-    pass

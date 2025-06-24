@@ -260,28 +260,3 @@ def test_sum_numbers_in_string_performance():
 
     assert result == 3
     assert duration < 0.1 
-
-def test_min_window():
-    actual_1 = min_window("ADOBECODEBANC", "ABC")
-    expected_1 = "BANC"
-
-    actual_2 = min_window("a", "a")
-    expected_2 = "a"
-
-    actual_3 = min_window("a", "aa")
-    expected_3 = ""
-
-    actual_3 = min_window("ab", "b")
-    expected_3 = "b"
-
-    actual_4 = min_window("bb", "bb")
-    expected_4 = "bb"
-
-    actual_5 = min_window("aaabdacbefaecbef", "abc")
-    expected_5 = "acb"
-
-    assert actual_1 == expected_1
-    assert actual_2 == expected_2
-    assert actual_3 == expected_3
-    assert actual_4 == expected_4
-    assert actual_5 == expected_5
