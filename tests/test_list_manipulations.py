@@ -255,6 +255,11 @@ def test_first_non_duplicated():
     assert expected_2 == actual_2
     assert expected_3 == actual_3
 
+def test_majority_element():
+    assert majority_element([3, 2, 3]) == 3
+    assert majority_element([2, 2, 1, 1, 1, 2, 2]) == 2
+    assert majority_element([1]) == 1
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]

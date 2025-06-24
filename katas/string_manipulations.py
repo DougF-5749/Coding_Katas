@@ -238,7 +238,11 @@ def generate_all_substrings(string):
 # Input: ("abc", "abd") -> False
 
 def validate_anagram(str1, str2):
-    return sorted(str1) == sorted(str2)
+    # compare sorted strings - O(n log n)
+    # return sorted(str1) == sorted(str2)
+
+    # compare hash maps frequencies of each string - O(n)
+    return Counter(str1) == Counter(str2)
 
 # 12. Convert String to Title Case
 # Description

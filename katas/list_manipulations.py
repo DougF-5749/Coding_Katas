@@ -1,4 +1,4 @@
- 
+from collections import Counter
 # Reverse a List
 # Task: Reverse the elements of a list in-place (or return a new reversed list).
 # Example: Input [1, 2, 3] -> Output [3, 2, 1].
@@ -280,7 +280,20 @@ def first_non_duplicated(string):
         if seen_hash_map[e] == 1:
             return e
 
+# Problem: Given a list of integers nums, return the element that appears more than ⌊n / 2⌋ times. 
+    # You may assume that the majority element always exists in the input.
+# Examples: 
+    # majority_element([3, 2, 3])            -> 3
+    # majority_element([2, 2, 1, 1, 1, 2, 2]) -> 2
+    # majority_element([1])                  -> 1
 
+def majority_element(nums):
+    nums_count = Counter(nums)
+    length = len(nums) / 2
+
+    for i in nums:
+        if nums_count[i] > length:
+            return i
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
