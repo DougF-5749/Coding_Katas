@@ -290,10 +290,10 @@ def first_non_duplicated(string):
 def majority_element(nums):
     nums_count = Counter(nums)
     length = len(nums) / 2
-
-    for i in nums:
-        if nums_count[i] > length:
-            return i
+        
+    for num, count in nums_count.items():
+        if count > length:
+            return num
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
