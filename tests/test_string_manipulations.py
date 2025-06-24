@@ -260,3 +260,11 @@ def test_sum_numbers_in_string_performance():
 
     assert result == 3
     assert duration < 0.1 
+
+def test_first_repeating_char():
+    assert first_repeating_char("") == None
+    assert first_repeating_char("abca") == 3
+    assert first_repeating_char("abcdefg") == -1
+    assert first_repeating_char("aabbcc") == 1
+    assert first_repeating_char("swiss") == 3
+    assert first_repeating_char("abdab") == 3

@@ -413,4 +413,39 @@ def sum_numbers_in_string(string):
 # EXAMPLE: first_repeating_char("abca") -> 3   # 'a' repeats at index 3
 
 def first_repeating_char(s: str) -> int:
-    pass
+    #  HASH MAP VERSION
+
+    # # If no string is input, then return None
+    # if not s:
+    #     return None
+
+    # # hash map to keep track of charcteres seen 
+    # seen = {}
+    # # Loop though each index in string 
+    # for i in range(len(s)):
+    #     # add element at index to hashmap if not already in the hashmap
+    #     if s[i] not in seen:
+    #         seen[s[i]] = True
+    #     # If element at index already seen return current index and end loop
+    #     else:
+    #         return i
+    # # return -1 if lop ends but no duplicates found
+    # return -1
+
+    #  SET VERSION - this is more readable
+    if not s:
+        return None
+    
+    # create empty set
+    seen = set()
+
+    # loop through s and keep track of index and character
+    for i, char in enumerate(s):
+        # if character already in the set return the index, if not...
+        if char in seen:
+            return i
+        # ...add charatcer to set
+        seen.add(char)
+    # if loop ends and no duplicates found, return -1
+    return -1
+
