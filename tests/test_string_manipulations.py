@@ -280,6 +280,7 @@ def test_is_valid_parentheses():
     assert is_valid_parentheses("]") == False
 
 def test_roman_to_int():
+    assert roman_to_int("") == 0  
     assert roman_to_int("III") == 3  
     assert roman_to_int("IV") == 4  
     assert roman_to_int("IX") == 9  
