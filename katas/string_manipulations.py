@@ -453,3 +453,18 @@ def first_repeating_char(s: str) -> int:
     # if loop ends and no duplicates found, return -1
     return -1
 
+# Given a string s containing just the characters '(', ')', '{', '}', '[', and ']', determine if the input string is valid.
+# A string is valid if:
+    # Open brackets are closed by the same type of brackets.
+    # Open brackets are closed in the correct order
+
+# Examples:
+    # is_valid_parentheses("()")           -> True  
+    # is_valid_parentheses("()[]{}")       -> True  
+    # is_valid_parentheses("(]")           -> False  
+    # is_valid_parentheses("([)]")         -> False  
+    # is_valid_parentheses("{[]}")         -> True  
+    # is_valid_parentheses("]")            -> False
+
+def is_valid_parentheses(s: str) -> bool:
+    pass
