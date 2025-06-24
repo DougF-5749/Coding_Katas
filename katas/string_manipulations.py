@@ -407,4 +407,5 @@ def sum_numbers_in_string(string):
     else:
         return None
 
-
+def min_window(s: str, t: str) -> str:
+    pass
