@@ -467,4 +467,27 @@ def first_repeating_char(s: str) -> int:
     # is_valid_parentheses("]")            -> False
 
 def is_valid_parentheses(s: str) -> bool:
-    pass
+    if len(s) % 2 != 0:
+        return False
+    
+    openers = ['(', '[', '{']
+
+    matches = {
+        '(': ')',
+        '[': ']',
+        '{': '}'
+    }
+
+    stack = []
+
+    for i in s:
+        if i in openers:
+            stack.append(i)
+        else:
+            if not stack:
+                return False
+            if matches[stack.pop()] != i:
+                return False
+                
+    # return True if not stack else False
+    return not stack

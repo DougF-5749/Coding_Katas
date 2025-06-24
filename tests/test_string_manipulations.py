@@ -268,3 +268,13 @@ def test_first_repeating_char():
     assert first_repeating_char("aabbcc") == 1
     assert first_repeating_char("swiss") == 3
     assert first_repeating_char("abdab") == 3
+
+def test_is_valid_parentheses():
+    assert is_valid_parentheses("") == True  
+    assert is_valid_parentheses("()") == True  
+    assert is_valid_parentheses("(") == False  
+    assert is_valid_parentheses("()[]{}") ==True  
+    assert is_valid_parentheses("(]") == False  
+    assert is_valid_parentheses("([)]") == False  
+    assert is_valid_parentheses("{[]}") == True  
+    assert is_valid_parentheses("]") == False
