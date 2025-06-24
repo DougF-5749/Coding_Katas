@@ -491,3 +491,17 @@ def is_valid_parentheses(s: str) -> bool:
                 
     # return True if not stack else False
     return not stack
+
+# Write a function that converts a Roman numeral to an integer.
+# Roman numerals are represented by seven symbols:
+    # I:1, V:5, X:10, L:50, C:100, D: 500, M:1000
+# A smaller numeral before a larger one means subtraction (like IV = 4, IX = 9).
+# Examples:
+    # roman_to_int("III")     -> 3  
+    # roman_to_int("IV")      -> 4  
+    # roman_to_int("IX")      -> 9  
+    # roman_to_int("LVIII")   -> 58   # L = 50, V = 5, III = 3  
+    # roman_to_int("MCMXCIV") -> 1994 # M = 1000, CM = 900, XC = 90, IV = 4  
+
+def roman_to_int(s: str) -> int:
+    pass
