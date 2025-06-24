@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import Counter, defaultdict
 # Reverse a List
 # Task: Reverse the elements of a list in-place (or return a new reversed list).
 # Example: Input [1, 2, 3] -> Output [3, 2, 1].
@@ -294,6 +294,34 @@ def majority_element(nums):
     for num, count in nums_count.items():
         if count > length:
             return num
+        
+# Given a list of strings, group the anagrams together. 
+# Return a list of groups, where each group is a list of strings that are anagrams of each other.
+# Examples:
+    # group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]) → [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+
+def group_anagrams(words: list) -> list[list[str]]:
+    groups = []
+    hash_map = defaultdict(list)
+
+    for word in words:
+        sorted_word = ''.join(sorted(word))
+        hash_map[sorted_word].append(word)
+    #     if not hash_map.get(sotred_string):
+    #         hash_map[sotred_string] = [lst[i]]
+    #     else:
+    #         hash_map[sotred_string].append(lst[i])
+    
+    for val in hash_map.values():
+        groups.append(val)
+
+    return groups
+
+
+
+
+
+
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array

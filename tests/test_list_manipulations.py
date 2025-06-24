@@ -260,6 +260,11 @@ def test_majority_element():
     assert majority_element([2, 2, 1, 1, 1, 2, 2]) == 2
     assert majority_element([1]) == 1
 
+def test_group_anagrams():
+    assert group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]) == [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+    assert group_anagrams([""]) == [[""]]
+    assert group_anagrams(["a"]) == [["a"]]
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
