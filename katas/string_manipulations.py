@@ -369,13 +369,12 @@ def sum_numbers_in_string(string):
     if not string:
         return None
     
-    # negative = False
     temp_string = ''
     number_array = []
 
     for i in range(0,len(string)):
         # if the element is char or '-'
-        if (string[i].isdigit() or string[i] == '-'):
+        if (string[i].isdigit() or string[i] == '-' or string[i] == "."):
             # check whether element is char or '-'
             if string[i] == '-':
                 # if element is '-'
@@ -387,7 +386,7 @@ def sum_numbers_in_string(string):
                 else:
                     if any(char.isdigit() for char in temp_string):
                     # add what is currently in the temp_string to numbers_array
-                        number_array.append(int(temp_string))
+                        number_array.append(float(temp_string))
                     # reset temp_string
                         temp_string = ''
                     # add current '-' symbol to temp_string -> temp_string should now == '-'
@@ -397,16 +396,15 @@ def sum_numbers_in_string(string):
                 temp_string += string[i]
         if not (string[i].isdigit() or string[i] == '-'):
             if temp_string:
-                number_array.append(int(temp_string))
+                number_array.append(float(temp_string))
                 temp_string = ''
 
     if temp_string and temp_string != '-':
-            number_array.append(int(temp_string))
+            number_array.append(float(temp_string))
     
     if number_array:
         return sum(number_array)
     else:
         return None
 
-# sum_numbers_in_string('a1b-1--1c-')
 

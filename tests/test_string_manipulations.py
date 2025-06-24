@@ -236,6 +236,9 @@ def test_sum_numbers_in_string():
     actual_10 = sum_numbers_in_string('a1b-1--1c--')
     expected_10 = -1
 
+    actual_11 = sum_numbers_in_string('a1.5--')
+    expected_11 = 1.5
+
     assert actual_1 == expected_1
     assert actual_2 == expected_2
     assert actual_3 == expected_3
@@ -246,3 +249,7 @@ def test_sum_numbers_in_string():
     assert actual_8 == expected_8
     assert actual_9 == expected_9
     assert actual_10 == expected_10
+    assert actual_11 == expected_11
+
+def test_min_window():
+    pass
