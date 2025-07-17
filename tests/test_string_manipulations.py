@@ -289,7 +289,7 @@ def test_roman_to_int():
 
 def test_string_to_int():
     assert string_to_int("42") == 42
-    string_to_int(" -42") == -42
-    string_to_int("4193 with words") == 4193
-    string_to_int("words and 987") == 0
-    string_to_int("-91283472332") == -2147483648
+    assert string_to_int(" -42") == -42
+    assert string_to_int("4193 with words") == 4193
+    assert string_to_int("words and 987") == 0
+    assert string_to_int("-91283472332") == -2147483648
