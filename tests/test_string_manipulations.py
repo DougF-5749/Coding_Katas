@@ -286,3 +286,10 @@ def test_roman_to_int():
     assert roman_to_int("IX") == 9  
     assert roman_to_int("LVIII") == 58      # L = 50, V = 5, III = 3  
     assert roman_to_int("MCMXCIV") == 1994  # M = 1000, CM = 900, XC = 90, IV = 4 
+
+def test_string_to_int():
+    assert string_to_int("42") == 42
+    string_to_int(" -42") == -42
+    string_to_int("4193 with words") == 4193
+    string_to_int("words and 987") == 0
+    string_to_int("-91283472332") == -2147483648
