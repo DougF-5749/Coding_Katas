@@ -542,20 +542,39 @@ def roman_to_int(s: str) -> int:
 def string_to_int(string):
     if not string:
         return 0
-
+        
+    digit = ""
     stripped = string.strip()
 
-    if not stripped[0].isalpha():
-        digit = stripped[0]
+    # if 0th index is digit, run loop until not a digit
+    if stripped[0].isdigit():
+        for e in range(len(stripped)):
+            if stripped[e].isdigit():
+                digit += stripped[e]
+            else:
+                break
+        return 0 if not digit else int(digit)
 
+    # if 0th index is +, run the loop starting at 1st index
+
+    if stripped[0] == "+":
         for e in range(1, len(stripped)):
             if stripped[e].isdigit():
                 digit += stripped[e]
             else:
-                break  
-        return int(digit)
-    else:
-        return 0
+                break
+        return 0 if not digit else int(digit)
+
+    if stripped[0] == "-":
+        digit = "-"
+        for e in range(1, len(stripped)):
+            if stripped[e].isdigit():
+                digit += stripped[e]
+            else:
+                break
+        return 0 if len(digit) == 1 else int(digit)
+
+    return 0
 
 
 
