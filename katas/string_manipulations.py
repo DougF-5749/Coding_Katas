@@ -541,5 +541,8 @@ def roman_to_int(s: str) -> int:
     # my_atoi("words and 987") -> 0
     # my_atoi("-91283472332") -> -2147483648
 
+def string_to_int(string):
+    pass
+
 
 
