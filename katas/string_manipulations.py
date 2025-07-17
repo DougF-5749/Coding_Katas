@@ -533,16 +533,30 @@ def roman_to_int(s: str) -> int:
 # String to Integer (atoi)
     # Implement a function that converts a string to an integer.
     # The function should discard leading whitespace, handle an optional + or - sign, and read in the next characters until a non-digit is found.
-    # The integer value should be clamped to the 32-bit signed integer range: [-2^31, 2^31 - 1].
 # Examples:
-    # my_atoi("42") -> 42
-    # my_atoi(" -42") -> -42
-    # my_atoi("4193 with words")-> 4193
-    # my_atoi("words and 987") -> 0
-    # my_atoi("-91283472332") -> -2147483648
+    # string_to_int("42") -> 42
+    # string_to_int(" -42") -> -42
+    # string_to_int("4193 with words")-> 4193
+    # string_to_int("words and 987") -> 0
 
 def string_to_int(string):
-    pass
+    if not string:
+        return 0
+
+    stripped = string.strip()
+
+    if not stripped[0].isalpha():
+        digit = stripped[0]
+
+        for e in range(1, len(stripped)):
+            if stripped[e].isdigit():
+                digit += stripped[e]
+            else:
+                break  
+        return int(digit)
+    else:
+        return 0
+
 
 
 

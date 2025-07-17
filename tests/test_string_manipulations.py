@@ -292,4 +292,10 @@ def test_string_to_int():
     assert string_to_int(" -42") == -42
     assert string_to_int("4193 with words") == 4193
     assert string_to_int("words and 987") == 0
-    assert string_to_int("-91283472332") == -2147483648
+    assert string_to_int("-91283472332") == -91283472332
+    assert string_to_int("-42abc") == -42
+    assert string_to_int("") == 0
+    assert string_to_int(" +abc") == 0
+    assert string_to_int(" --42") == 0
+    assert string_to_int("+-12") == 0
+    assert string_to_int(" +0045abc") == 45
