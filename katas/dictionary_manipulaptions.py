@@ -22,6 +22,9 @@ def count_word_frequencies(lst):
 # Task: Given a list of words, group them together if they are anagrams of each other.
 # Example: ["eat","tea","tan","ate","nat","bat"] -> [["eat","tea","ate"], ["tan","nat"], ["bat"]].
 
+def most_frequent_word():
+    pass
+
 def group_anagrams():
     pass
 
