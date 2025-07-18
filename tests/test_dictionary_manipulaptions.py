@@ -19,6 +19,7 @@ def test_count_word_frequencies():
 def test_most_frequent_word():
     assert most_frequent_word("Hello, hello! How are you? Are you well? Hello!") == "hello"
     assert most_frequent_word("to be or not to be") == "be"
+    assert most_frequent_word("hello, hello, hello, goodbye, goodbye, goodbye") == "goodbye"
 
 def test_group_anagrams():
     assert group_anagrams(["eat","tea","tan","ate","nat","bat"]) == [["eat","tea","ate"], ["tan","nat"], ["bat"]]
