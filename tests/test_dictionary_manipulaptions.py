@@ -16,6 +16,10 @@ def test_count_word_frequencies():
 # Task: Given a list of words, group them together if they are anagrams of each other.
 # Example: ["eat","tea","tan","ate","nat","bat"] -> [["eat","tea","ate"], ["tan","nat"], ["bat"]].
 
+def test_most_frequent_word():
+    assert most_frequent_word("Hello, hello! How are you? Are you well? Hello!") == "hello"
+    assert most_frequent_word("to be or not to be") == "be"
+
 def test_group_anagrams():
     assert group_anagrams(["eat","tea","tan","ate","nat","bat"]) == [["eat","tea","ate"], ["tan","nat"], ["bat"]]
     assert group_anagrams(["eat","tea","tan","ate","nat","bat","tab"]) == [["eat","tea","ate"], ["tan","nat"], ["bat","tab"]]
