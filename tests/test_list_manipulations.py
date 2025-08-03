@@ -267,11 +267,11 @@ def test_group_anagrams():
 
 def test_decode_matrix():
     matrix_1 = [
-    ['T', '%', 'A', ' '],
-    ['h', '3', '&', 'i'],
-    ['e', '7', '!', 's'],
-    [' ', '@', '#', ' '],
-    ['q', 'u', 'i', 'z']
+    ['T', '%', 'S', ' '],
+    ['h', '3', '&', 'q'],
+    ['e', '7', '!', 'u'],
+    [' ', '@', '#', 'i'],
+    ['A', 'I', '?', 'z']
 ]
     actual_1 = decode_matrix(matrix_1)
     expedcted_1 = "The AIS quiz"
@@ -280,11 +280,11 @@ def test_decode_matrix():
     matrix_2 = [
     ['$', 'a', '#'],
     ['%', 'b', '*'],
-    ['1', 'c', ' '],
-    ['&', ' ', 'd']
+    ['1', 'c', '+'],
+    ['&', '1', 'd']
 ]
     actual_2 = decode_matrix(matrix_2)
-    expedcted_2 = "The AIS quiz"
+    expedcted_2 = "abcd"
     assert actual_2 == expedcted_2
 
 # Merge Sort
