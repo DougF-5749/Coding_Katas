@@ -336,7 +336,22 @@ def group_anagrams(words: list) -> list[list[str]]:
 # "The AIS quiz"
 
 def decode_matrix(matrix: list[list[str]]) -> str:
-    pass
+    concat_string = ""
+    index = 0
+    final_index = len(matrix[0]) - 1
+
+    while index <= final_index:
+        for lst in matrix:
+            if (lst[index].isalpha() or lst[index] == ' '):
+                    concat_string += lst[index]
+        index += 1
+            
+    return concat_string
+
+
+
+
+        
 
 
 
