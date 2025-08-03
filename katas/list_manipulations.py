@@ -317,7 +317,26 @@ def group_anagrams(words: list) -> list[list[str]]:
 
     return groups
 
+# Decode the Message from a Matrix
+# You're given a matrix (list of lists) of single characters. 
+    # This matrix represents a hidden message that's been encoded column-wise. 
+    # Your task is to decode the message by reading the characters column by column...
+    # ...from top to bottom and left to right, ignoring any non-alphabetic characters
+    # and then replacing sequences of non-alphabetic characters (when concatenated row-wise) with a single space.
+# Example input:
+# matrix = [
+#     ['T', '%', 'A', ' '],
+#     ['h', '3', '&', 'i'],
+#     ['e', '7', '!', 's'],
+#     [' ', '@', '#', ' '],
+#     ['q', 'u', 'i', 'z']
+# ]
 
+# Expected ouput:
+# "The AIS quiz"
+
+def decode_matrix(matrix: list[list[str]]) -> str:
+    pass
 
 
 
