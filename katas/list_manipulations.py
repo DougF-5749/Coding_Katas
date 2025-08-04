@@ -357,10 +357,35 @@ def decode_matrix(matrix: list[list[str]]) -> str:
     # decode("a3b")         => "aaab"
     # decode("a\\3b2")      => "a3bb"       # `\\3` means literal "3"
 
-def runlength_decode(input: str) -> str:
-    pass
+def runlength_decode(input_string: str) -> str:
+    decoded = ""
+    i = 0
 
+    while i < len(input_string):
+        # check for escape character
+        if input_string[i] == "\\":
+            i += 1  # skip escape character
+            if i < len(input_string):       # check i is within index range
+                decoded += input_string[i]  # add escaped character
+            i += 1                          # increase index tracker
+            
+        # if not an esacpe character check for alpha char
+        elif input_string[i].isalpha():
+            # check i+1 is within index rang and is digit
+            if (i+1 < len(input_string) and input_string[i+1].isdigit()):
+                # update decoded string with alpha multiplied by digit
+                decoded += input_string[i] * int(input_string[i+1])
+                i += 2  # move index tracker past current and next index
+            
+            # if i+1 is out of index range
+            else:
+                # update decoded string with alpha 
+                decoded += input_string[i] 
+                i += 1 # increment index tracker to avoid infinate loop
+        else:
+            i += 1
 
+    return decoded 
 
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
