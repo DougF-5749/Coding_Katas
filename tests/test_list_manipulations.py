@@ -287,6 +287,13 @@ def test_decode_matrix():
     expedcted_2 = "abcd"
     assert actual_2 == expedcted_2
 
+def test_runlength_decode():
+    assert runlength_decode("a3b")  == "aaab"
+    assert runlength_decode("a\\3b2")      == "a3bb"       # `\\3` means literal "3"
+    assert runlength_decode("a\\\\2b")     == "a\\b"       # `\\\\` → literal `\` followed by 2 → "\\" x 2 = "\\"
+    assert runlength_decode("x\\2y\\5z")   == "x2y5z"
+    assert runlength_decode("a2\\1b")      == "aab1b"
+
 # Merge Sort
 # Task: Merge two sorted arrays together to create a new sorted array
 # Example: [1, 3, 5] and [2, 4, 6] -> [1, 2, 3, 4, 5, 6]
