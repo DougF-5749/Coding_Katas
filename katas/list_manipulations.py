@@ -349,9 +349,8 @@ def decode_matrix(matrix: list[list[str]]) -> str:
     return concat_string
 
 
-
-
-        
+def runlength_decode(input: str) -> str:
+    pass
 
 
 
