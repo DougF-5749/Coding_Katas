@@ -348,11 +348,17 @@ def decode_matrix(matrix: list[list[str]]) -> str:
             
     return concat_string
 
+# Runlength decode with escaped characters
+# You are given a string that represents a run-length encoded message, where characters can be followed by digits to indicate repetition. 
+    # If a character is not followed by a digit, it appears once.
+    # If a character is followed by a digit, it repeats that many times.
+    # The backslash (\) is used to escape digits and backslashes, so they are treated literally, not as counts. 
+# Examples:
+    # decode("a3b")         => "aaab"
+    # decode("a\\3b2")      => "a3bb"       # `\\3` means literal "3"
 
 def runlength_decode(input: str) -> str:
     pass
-
-
 
 
 
